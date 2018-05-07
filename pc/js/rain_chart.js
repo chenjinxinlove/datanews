@@ -13,6 +13,7 @@ var TIMER;
 var start_time = 0;
 var ZANTING = false;
 
+var hoverShow = false;
 var date_count=229;
 var date_step=(cssPxToInt($(".map-part1-timeline-line").css("width"))-cssPxToInt($(".map-part1-timeline-pointer").css("width")))/date_count;
 // if($(window).width()<768){date_step=$(window).width()*0.95/date_count}
@@ -23,7 +24,7 @@ var winWidth=$(window).width();
 var mapHeight=750;
 var mapShiftTop=mapHeight+130-winHeight;
 if(mapShiftTop<0) mapShiftTop=0;
-$(".map").css("height",winHeight+mapShiftTop-160+"px").css("margin-top","-"+mapShiftTop+"px");
+// $(".map").css("height",winHeight+mapShiftTop-160+"px").css("margin-top","-"+mapShiftTop+"px");
 
 if($(window).width()<=768) {
     $(".map").css("top","100px");}
@@ -201,7 +202,7 @@ function showDot() {
                     // debugger;
                     rangeslider__handle.append(renderDomIncident(incidentArr[j].dynasty, incidentArr[j].year))
                 }
-
+                
 
 
             }
@@ -234,30 +235,34 @@ function showDot() {
                     start_time = 0;
                 }
 
-                if(start_time > 158 && start_time < 162 ) {
-                    $('.info-incident').eq(0).show()
-                }else {
-                    $('.info-incident').eq(0).hide()
+                if(!hoverShow) {
+                    if(start_time > 158 && start_time < 162 ) {
+                        $('.info-incident').eq(0).show()
+                    }else {
+                        $('.info-incident').eq(0).hide()
+                    }
+
+                    if(start_time > 406 && start_time < 408 ) {
+                        $('.info-incident').eq(1).show()
+                    }else {
+                        $('.info-incident').eq(1).hide()
+                    }
+
+                    if(start_time > 429 && start_time < 432 ) {
+                        $('.info-incident').eq(2).show()
+                    }else {
+                        $('.info-incident').eq(2).hide()
+                    }
+
+                    if(start_time > 527 && start_time < 529 ) {
+                        $('.info-incident').eq(3).show()
+                    }else {
+                        $('.info-incident').eq(3).hide()
+                    }
+
                 }
 
-                if(start_time > 406 && start_time < 408 ) {
-                    $('.info-incident').eq(1).show()
-                }else {
-                    $('.info-incident').eq(1).hide()
-                }
-
-                if(start_time > 429 && start_time < 432 ) {
-                    $('.info-incident').eq(2).show()
-                }else {
-                    $('.info-incident').eq(2).hide()
-                }
-
-                if(start_time > 527 && start_time < 529 ) {
-                    $('.info-incident').eq(3).show()
-                }else {
-                    $('.info-incident').eq(3).hide()
-                }
-
+                
 
                 start_time ++;
 
@@ -297,6 +302,17 @@ function showDot() {
             });
             setTimeout(function () {
                 drawScale();
+                setTimeout(function() {
+                    $('.scale-incident').on('mouseover', function(e) {
+                        hoverShow = true
+                        var index = $(this).index()
+                        $(this).find('.info-incident').show()
+                        var self = this;
+                        $(this).on('mouseout', function(){
+                            hoverShow = false
+                        })
+                    })
+                }, 200)
             });
             $('.map-replay').on('click', function (e) {
                 if($(this).hasClass('zt')) {
@@ -348,7 +364,6 @@ function drawDot(data) {
             }
             return  7;
         })
-        //.text(function(d){return d.city})
         .attr("fill", "rgba(0,0,0,0)")
         .attr("stroke", function(d, i){
             //控制展示
@@ -386,53 +401,6 @@ function drawDot(data) {
         .transition()
         .duration(500)
 
-    // svg.selectAll(".dot-b")
-    //     .attr("r",function(d,i){
-    //         var dd = data[i];
-    //         if(dd == 1 || dd == 5) {
-    //             return 10;
-    //         }
-    //         if(dd == 2 || dd == 4) {
-    //             return 8;
-    //         }
-    //         return  7;
-    //     })
-    //     //.text(function(d){return d.city})
-    //     .transition()
-    //     .duration(500)
-    //     .attr("fill", "rgba(0,0,0,0)")
-    //     .attr("stroke", function(d, i){
-    //         //控制展示
-    //         if (!data) return;
-    //         var d = data[i];
-    //         if(!showType.hanActive) {
-    //             if(d == 5) {
-    //                 return color(0);
-    //             }
-    //         }
-    //         if(!showType.normalActive) {
-    //             if (d == 3) {
-    //                 return color(0);
-    //             }
-    //         }
-    //         if(!showType.laoActive) {
-    //             if (d == 1) {
-    //                 return color(0);
-    //             }
-    //         }
-    //         if(!showType.bjlaoActive) {
-    //             if (d == 2) {
-    //                 return color(0);
-    //             }
-    //         }
-    //         if(!showType.bjhanActive) {
-    //             if (d == 4) {
-    //                 return color(0);
-    //             }
-    //         }
-    //         return color(d);
-    //     })
-    //     .style("opacity",1)
     svg.selectAll(".dot")
     .attr("r",function(d,i){
         var dd = data[i];
@@ -444,9 +412,6 @@ function drawDot(data) {
         }
         return  4;
         })
-        //.text(function(d){return d.city})
-        // .transition()
-        // .duration(500)
         .attr("fill", function(d, i){
             //控制展示
             if (!data) return;

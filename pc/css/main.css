@@ -1,0 +1,131 @@
+/* *matrix view */
+
+#matrixPage-canvasDiv {
+    width: 1179px;
+    height: 77vh;
+    margin: 0;
+    position: relative;
+    /* background: #c2c7c6; */
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+#matrixPage-canvasDiv .matrixDiv {
+    width: 84%;
+    height: 70vh;
+    float: right;
+    /* margin-left: 108px; */
+    background: #c2c7c6;
+}
+
+#matrixPage-canvasDiv .titleDiv {
+    width: 7%;
+    height: 70vh;
+    float: right;
+    /* margin-right: 22px; */
+}
+
+#matrixPage-canvasDiv .timeline {
+    /* margin-top: 3vh; */
+    width: 90%;
+    height: 2vh;
+    margin-top: 2px;
+    position: relative;
+    float: right;
+}
+
+#matrixPage-canvasDiv .titleDiv .cityName {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    line-height: 20px;
+    margin: 0;
+    float: left;
+    font-size: 0.7rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#matrixPage-canvasDiv .titleDiv .cityNameDown {
+    color: RGB(95, 106, 114);
+    background: url("../img/matrix-textLineLeft.png");
+    background-size: 100% 100%;
+    padding-top: 5px;
+}
+
+/* 90ad63 */
+
+#matrixPage-canvasDiv .titleDiv .cityNameUp {
+    color: RGB(95, 106, 114);
+    background: url("../img/matrix-textLineLeft.png");
+    background-size: 100% 100%;
+}
+
+#matrixPage-canvasDiv .titleDiv .cityNameHover {
+    color: #ff6e43;
+}
+
+#matrixPage-canvasDiv .matrixDiv span {
+    display: block;
+    box-sizing: border-box;
+    background-size: 100% auto;
+}
+
+#matrixPage-canvasDiv .matrixDiv .borderMatrix {}
+
+#matrixPage-canvasDiv .matrixDiv .tier1,
+#matrixPage-canvasDiv .matrixDiv .tier2,
+#matrixPage-canvasDiv .matrixDiv .tier3 {
+    border-top: solid 1px rgba(247, 213, 168, 1);
+    box-sizing: border-box;
+}
+
+#matrixLegend {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    width: 7rem;
+    float: left;
+    padding: 1rem 1rem;
+    -moz-box-shadow: 0 0 1rem #141627;
+    -webkit-box-shadow: 0 0 1rem #141627;
+    box-shadow: 0 0 15px #141627;
+}
+
+#matrixLegend-En {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    width: 7rem;
+    float: left;
+    padding: 1rem 1rem;
+    -moz-box-shadow: 0 0 1rem #141627;
+    -webkit-box-shadow: 0 0 1rem #141627;
+    box-shadow: 0 0 15px #141627;
+}
+
+#matrixLegend p {
+    margin: 0.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    height: 1.5rem;
+}
+
+#matrixLegend-En p {
+    margin: 0.2rem;
+    line-height: 1rem;
+    text-align: center;
+    height: 2.5rem;
+}
+
+#matrixPage .rateLegend {
+    background: url(http://datanews.caixin.com/mobile/home/image/rateMatrixLegend.png) no-repeat;
+    background-size: 100% auto;
+    color: #f7d5a8;
+    margin: 0.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    height: 1.5rem;
+}
+
+/* *calculator */

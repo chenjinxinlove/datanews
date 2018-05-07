@@ -1,0 +1,82 @@
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  /* border-radius: 10px; */
+}
+
+.rangeslider {
+  position: relative;
+}
+
+.rangeslider--horizontal {
+  position: relative;
+  height: 15px;
+  width: 337px;
+  margin: 10px auto;
+  border: 1px solid #d3d3d3;
+  background: url(../img/progress.png) repeat center;
+  border-radius: 1px;
+}
+
+.rangeslider__fill{
+  border-radius: 1px;
+  background: url("../img/progress-bar.png") repeat center;
+}
+
+.rangeslider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+
+.rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%;
+}
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+.rangeslider__handle{
+  /* background: url("../img/slide_hk.png") no-repeat center; */
+  cursor: pointer;
+  display: inline-block;
+  width: 7px;
+  height: 18px;
+  position: absolute;
+  top: -2px;
+  /* left: -1px; */
+  border: 1px solid #7b848a;
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+input[type="range"]:focus + .rangeslider .rangeslider__handle {
+  -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+}
+.timeShow{
+  position: absolute;
+  top:-25px;
+  left: 0px;
+  width: 100px;
+  font-size: 16px;
+  color: #7d868d;
+  font-weight: bold;
+}

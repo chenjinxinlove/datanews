@@ -13,12 +13,13 @@ body {
 }
 
 .title {
-    color: RGB(95, 106, 114);
+    color: #4f4f4f;
     font-size: 30px;
     line-height: 150px;
     text-align: center;
     line-height: 100px;
     height: 100px;
+    font-weight: bold;
 }
 
 .map-replay {
@@ -26,7 +27,7 @@ body {
     height: 46px;
     position: absolute;
     left: 0px;
-    bottom: 45px;
+    bottom: 20px;
     cursor: pointer;
 }
 
@@ -715,7 +716,7 @@ body {
 .operation {
     width: 2px;
     height: 515px;
-    background: #fff;
+    background: #a0a0a0;
     position: absolute;
     top: 0;
     left: 50%;
@@ -738,7 +739,7 @@ body {
     height: 1080px;
     width: 100%;
     font-size: 18px;
-    color: #fff;
+    color: rgba(255, 255,255,0.7);
     background: url("./../img/foot.jpg")no-repeat 50%;
     background-size: cover
 }
@@ -939,4 +940,9 @@ body {
 }
 #loadingPercent p{
     color: #555;
+}
+.bt{
+    font-size: 32px;
+    color: #4f4f4f;
+    margin: 40px 0;
 }

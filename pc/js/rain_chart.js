@@ -222,16 +222,10 @@ function showDot() {
                 }, 500)
             }
             function  bf() {
-<<<<<<< HEAD
                 if(start_time ===  dateList) {
                     start_time = 0;
                 }
-=======
-                if (start_time === dateList) {
-                    start_time = 1
-                }
 
->>>>>>> 42da4a56e1732fc7da84ef38a89ce6350697ec74
                 var data = root[start_time];
                 // console.log(start_time, start_time + 1470 , data);
                 drawDot(data, latLon);
@@ -242,10 +236,6 @@ function showDot() {
                 $('.rangeslider__fill').css('width',(totalWidth / dateList) * start_time + 'px');
                 $('.timeShow').text(1470 + start_time + '年');
                 
-<<<<<<< HEAD
-
-=======
->>>>>>> 42da4a56e1732fc7da84ef38a89ce6350697ec74
                 if(!hoverShow) {
                     if(start_time > 158 && start_time < 162 ) {
                         $('.info-incident').eq(0).show()

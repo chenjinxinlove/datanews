@@ -236,8 +236,14 @@
                 $(".ts h1 span").click(function () {
 
                     var ts = $(".ts h1 span").index(this);
-                    $(".ts h1 span").removeClass("m");
-                    $(this).addClass("m");
+                    // if ($(this).hasClass('m')) {
+                    //     $(this).removeClass();
+                    // } else {
+                    //     $(this).addClass("m");
+                    // }
+                    $(this).toggleClass('m')
+                    // $(".ts h1 span").removeClass("m");
+                    // $(this).addClass("m");
                     if (ts == 0) {
                         $(".biao p i").hide();
                     } 

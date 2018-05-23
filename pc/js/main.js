@@ -232,14 +232,14 @@ setInterval(function(){chart98Ani(chart98_id);},2500);
 
 var dilishu_id=0;
 function dilishuAni(id){
-    if(id<3){
+    if(id<2){
         $(".dilishu ul").eq(1).find("li").eq(id).fadeOut(1000);
         $(".dilishu ul").eq(1).find("li").eq(id+1).fadeIn(1000);
         $(".dilishu ul").eq(0).find("li").removeClass("now");
         $(".dilishu ul").eq(0).find("li").eq(id+1).addClass("now");
         dilishu_id++;
     }
-    else if(id==3){
+    else if(id==2){
         $(".dilishu ul").eq(1).find("li").eq(id).fadeOut(1000);
         $(".dilishu ul").eq(1).find("li").eq(0).fadeIn(1000);
         $(".dilishu ul").eq(0).find("li").removeClass("now");

@@ -222,6 +222,9 @@ function showDot() {
                 }, 500)
             }
             function  bf() {
+                if(start_time ===  dateList) {
+                    start_time = 0;
+                }
                 var data = root[start_time];
                 // console.log(start_time, start_time + 1470 , data);
                 drawDot(data, latLon);
@@ -231,33 +234,43 @@ function showDot() {
                 $('.rangeslider__handle').css('left',(totalWidth / dateList) * start_time  + 'px');
                 $('.rangeslider__fill').css('width',(totalWidth / dateList) * start_time + 'px');
                 $('.timeShow').text(1470 + start_time + '年');
-                if(start_time ===  dateList) {
-                    start_time = 0;
-                }
+                
 
                 if(!hoverShow) {
                     if(start_time > 158 && start_time < 162 ) {
                         $('.info-incident').eq(0).show()
                     }else {
-                        $('.info-incident').eq(0).hide()
+                        setTimeout(function() {
+                            $('.info-incident').eq(0).hide()
+                        }, 10000)
+                        
                     }
 
                     if(start_time > 406 && start_time < 408 ) {
                         $('.info-incident').eq(1).show()
                     }else {
-                        $('.info-incident').eq(1).hide()
+                        setTimeout(function() {
+                            $('.info-incident').eq(1).hide()
+                        }, 10000)
+                        
                     }
 
                     if(start_time > 429 && start_time < 432 ) {
                         $('.info-incident').eq(2).show()
                     }else {
-                        $('.info-incident').eq(2).hide()
+                        setTimeout(function() {
+                            $('.info-incident').eq(2).hide()
+                        }, 10000)
+                        
                     }
 
                     if(start_time > 527 && start_time < 529 ) {
                         $('.info-incident').eq(3).show()
                     }else {
-                        $('.info-incident').eq(3).hide()
+                        setTimeout(function() {
+                            $('.info-incident').eq(3).hide()
+                        }, 10000)
+                        
                     }
 
                 }

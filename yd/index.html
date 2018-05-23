@@ -240,45 +240,49 @@
                     $(this).addClass("m");
                     if (ts == 0) {
                         $(".biao p i").hide();
-
-                    } else {
-                        $(".biao p").eq(ts-1).find("i").toggle()
+                    } 
+                    if (ts == 1) {
+                        $(".biao p i").hide();
+                        $(".biao p").each(function (index, element) {
+                            $(".biao p").eq(index).find("i").show();
+                            $(".biao p").eq(ts - 1).find("i").hide();
+                        });
                     }
-                    // if (ts == 2) {
-                    //     $(".biao p i").hide();
-                    //     $(".biao p").each(function (index, element) {
-                    //         $(".biao p").eq(index).find("i").show();
-                    //         $(".biao p").eq(ts - 1).find("i").hide();
-                    //     });
-                    // }
-                    // if (ts == 3) {
-                    //     $(".biao p i").hide();
-                    //     $(".biao p").each(function (index, element) {
-                    //         $(".biao p").eq(index).find("i").show();
-                    //         $(".biao p").eq(ts - 1).find("i").hide();
-                    //     });
-                    // }
-                    // if (ts == 4) {
-                    //     $(".biao p i").hide();
-                    //     $(".biao p").each(function (index, element) {
-                    //         $(".biao p").eq(index).find("i").show();
-                    //         $(".biao p").eq(ts - 1).find("i").hide();
-                    //     });
-                    // }
-                    // if (ts == 5) {
-                    //     $(".biao p i").hide();
-                    //     $(".biao p").each(function (index, element) {
-                    //         $(".biao p").eq(index).find("i").show();
-                    //         $(".biao p").eq(ts - 1).find("i").hide();
-                    //     });
-                    // }
-                    // if (ts == 6) {
-                    //     $(".biao p i").hide();
-                    //     $(".biao p").each(function (index, element) {
-                    //         $(".biao p").eq(index).find("i").show();
-                    //         $(".biao p").eq(ts - 1).find("i").hide();
-                    //     });
-                    // }
+                    if (ts == 2) {
+                        $(".biao p i").hide();
+                        $(".biao p").each(function (index, element) {
+                            $(".biao p").eq(index).find("i").show();
+                            $(".biao p").eq(ts - 1).find("i").hide();
+                        });
+                    }
+                    if (ts == 3) {
+                        $(".biao p i").hide();
+                        $(".biao p").each(function (index, element) {
+                            $(".biao p").eq(index).find("i").show();
+                            $(".biao p").eq(ts - 1).find("i").hide();
+                        });
+                    }
+                    if (ts == 4) {
+                        $(".biao p i").hide();
+                        $(".biao p").each(function (index, element) {
+                            $(".biao p").eq(index).find("i").show();
+                            $(".biao p").eq(ts - 1).find("i").hide();
+                        });
+                    }
+                    if (ts == 5) {
+                        $(".biao p i").hide();
+                        $(".biao p").each(function (index, element) {
+                            $(".biao p").eq(index).find("i").show();
+                            $(".biao p").eq(ts - 1).find("i").hide();
+                        });
+                    }
+                    if (ts == 6) {
+                        $(".biao p i").hide();
+                        $(".biao p").each(function (index, element) {
+                            $(".biao p").eq(index).find("i").show();
+                            $(".biao p").eq(ts - 1).find("i").hide();
+                        });
+                    }
                 })
             })
         </script>

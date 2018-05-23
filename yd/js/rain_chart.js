@@ -253,27 +253,34 @@ function showDot() {
                 if(start_time > 158 && start_time < 162 ) {
                     $('.info-incident').eq(0).show()
                 }else {
-                    $('.info-incident').eq(0).hide()
+                    setTimeout(function() {
+                        $('.info-incident').eq(0).hide()
+                    }, 10000)
                 }
 
                 if(start_time > 406 && start_time < 408 ) {
                     $('.info-incident').eq(1).show()
                 }else {
-                    $('.info-incident').eq(1).hide()
+                    setTimeout(function() {
+                        $('.info-incident').eq(1).hide()
+                    }, 10000)
                 }
 
                 if(start_time > 429 && start_time < 432 ) {
                     $('.info-incident').eq(2).show()
                 }else {
-                    $('.info-incident').eq(2).hide()
+                    setTimeout(function() {
+                        $('.info-incident').eq(2).hide()
+                    }, 10000)
                 }
 
                 if(start_time > 527 && start_time < 529 ) {
                     $('.info-incident').eq(3).show()
                 }else {
-                    $('.info-incident').eq(3).hide()
+                    setTimeout(function() {
+                        $('.info-incident').eq(3).hide()
+                    }, 10000)
                 }
-
                 start_time ++;
                 if(start_time ===  dateList) {
                     start_time = 0;

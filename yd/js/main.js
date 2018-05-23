@@ -299,106 +299,6 @@ function coverStart() {
     var chart2Play = 0;
     var coverShow = 1;
 
-
-    // $(window).scroll(function(){
-    //     var top = $(this).scrollTop();
-    //     var val1 = $(".part-3").offset().top //降水infographic
-    //     var val2 = $(".part-7").offset().top //伤亡infographic
-    //     var val3 = $(".dilishu").offset().top //地理书
-    //     var val4 = $(".chart98").offset().top //98洪水
-    //
-    //     if($(window).width()>768){
-    //         scrollCount++;
-    //         if(coverShow==1) $(this).scrollTop(0);
-    //         if(scrollCount>10&&coverShow==1) {
-    //
-    //             //$("#cover-audio").trigger("pause");
-    //             coverShow=0;
-    //
-    //             $('body,html').animate({
-    //                 scrollTop: 0
-    //             },function(){scrollCount=0})
-    //
-    //             $(".part-0").css("height",$(window).height()+"px").fadeOut(1000);
-    //             coverShow=0;
-    //             //$(".cover-video").trigger("pause")
-    //             $(".flood-video").trigger("play");
-    //             $(".flood-video-control-bar").animate({width:"100%"},60000,"linear")
-    //
-    //
-    //             $(".flood-video").bind("ended",function(){
-    //                 $(".flood-video-poster").fadeIn();
-    //                 $(".part-0").css("position","absolute").fadeIn();
-    //                 $(".flood-video-control-bar").css("width","0");
-    //                 $(".cover-video").trigger("play")
-    //                 $(".flood-replay").fadeIn().bind("click",function(){
-    //                     $(this).fadeOut();
-    //                     $(".part-0").fadeOut();
-    //                     $(".flood-video").trigger("play");
-    //                     $(".flood-video-control-bar").animate({width:"100%"},60000,"linear")
-    //                 })
-    //             })
-    //
-    //         }
-    //     }
-    //
-    //
-    //
-    //
-    //
-    //     if(top>val1-100&&chart1Play==0){
-    //         chart1Play=1;
-    //         showDot();
-    //
-    //     }
-    //
-    //     if(top>val2-400&&chart2Play==0){
-    //         chart2Play=1;
-    //         disasterPlay(0);
-    //     }
-    //
-    //
-    //
-    //     if(top>val3-winHeight&&dilishuPlay==0){
-    //         dilishuAni(0);
-    //         setInterval(function(){dilishuAni(dilishu_id);},4000);
-    //         dilishuPlay=1;
-    //     }
-    //
-    //     if(top>val4-winHeight&&chart98Play==0){
-    //         chart98Ani(0);
-    //         setInterval(function(){chart98Ani(chart98_id);},3000);
-    //         chart98Play=1;
-    //     }
-    //
-    //
-    //
-    //
-    //
-    //     function nextImage(divName, thisId, maxId){
-    //         //console.log(thisId);
-    //         if(thisId<maxId){
-    //             $("."+divName+" ul li").eq(thisId).fadeOut(1000);
-    //             $("."+divName+" ul li").eq(thisId+1).fadeIn(1000);
-    //             dilishu_id++;
-    //         }
-    //         if(thisId==maxId){
-    //             $("."+divName+" ul li").eq(thisId).fadeOut(1000);
-    //             $("."+divName+" ul li").eq(0).fadeIn(1000);
-    //             dilishu_id=0;
-    //             dilishu_freeze=0;
-    //             //setTimeout(function(){dilishu_freeze=1},2000)
-    //             //jumpTo(divName);
-    //
-    //         }
-    //
-    //     }
-    //
-    //
-    //
-    //
-    // });
-
     function hideScrollTip() {
         if ($(window).scrollTop() > 0) {
             clearInterval(scrollTime)
@@ -433,13 +333,13 @@ setInterval(function () {
 var dilishu_id = 0;
 
 function dilishuAni(id) {
-    if (id < 3) {
+    if (id < 2) {
         $(".dilishu ul").eq(1).find("li").eq(id).fadeOut(1000);
         $(".dilishu ul").eq(1).find("li").eq(id + 1).fadeIn(1000);
         $(".dilishu ul").eq(0).find("li").removeClass("now");
         $(".dilishu ul").eq(0).find("li").eq(id + 1).addClass("now");
         dilishu_id++;
-    } else if (id == 3) {
+    } else if (id == 2) {
         $(".dilishu ul").eq(1).find("li").eq(id).fadeOut(1000);
         $(".dilishu ul").eq(1).find("li").eq(0).fadeIn(1000);
         $(".dilishu ul").eq(0).find("li").removeClass("now");
@@ -450,7 +350,7 @@ function dilishuAni(id) {
 }
 setInterval(function () {
     dilishuAni(dilishu_id);
-}, 1000);
+}, 5000);
 
 
 

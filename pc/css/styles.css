@@ -14,11 +14,9 @@ body {
 
 .title {
     color: #4f4f4f;
-    font-size: 30px;
-    line-height: 150px;
+    font-size: 20px;
     text-align: center;
-    line-height: 100px;
-    height: 100px;
+    line-height: 28px;
     font-weight: bold;
 }
 
@@ -27,7 +25,7 @@ body {
     height: 46px;
     position: absolute;
     left: 0px;
-    bottom: 20px;
+    bottom: 89px;
     cursor: pointer;
 }
 
@@ -261,7 +259,7 @@ body {
     /*border: 1px solid #ac4c4b;*/
     position: absolute;
     left: 0px;
-    top: 500px;
+    top: 600px;
     z-index: 999;
     /*background: url('../images/legend.png') no-repeat center;*/
 }
@@ -716,7 +714,7 @@ body {
 .operation {
     width: 2px;
     height: 515px;
-    background: #a0a0a0;
+    background: rgba(160, 160, 160, 0.24);
     position: absolute;
     top: 0;
     left: 50%;
@@ -942,7 +940,17 @@ body {
     color: #555;
 }
 .bt{
-    font-size: 32px;
+    font-size: 20px;
     color: #4f4f4f;
-    margin: 40px 0;
+    margin: 20px 0;
+}
+.dbt{
+    text-align:center;
+    height:70px;
+    line-height:70px;
+    font-size: 30px;
+    color: #3e3a39;
+}
+.dynasty{
+    color: #5f6a72;
 }

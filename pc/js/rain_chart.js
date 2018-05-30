@@ -370,7 +370,7 @@ function drawDot(data) {
         .attr("r",function(d,i){
             var dd = data[i];
             if(dd == 1 || dd == 5) {
-                return 10;
+                return 9;
             }
             if(dd == 2 || dd == 4) {
                 return 7;

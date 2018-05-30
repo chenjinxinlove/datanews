@@ -469,6 +469,10 @@ $('.droughtFlood li').bind('click', function (e) {
         showType[classActive] = true;
     }
 });
+setTimeout(function(params) {
+    $('.map').css({ transform: 'scale(0.4)','margin-left': '-81%' })
+}, 200);
+
 
 
 

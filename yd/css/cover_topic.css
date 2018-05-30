@@ -86,7 +86,7 @@ ul,li{list-style:none}
     height: 78%;
     position: relative;
     margin: 0 auto;
-    width: 600px;
+    width: 100%;
     overflow: hidden;
 }
 .interactive-wrapper{position:relative; margin:0 auto; width: 1000px; height: 98%;  }
@@ -214,7 +214,14 @@ ul,li{list-style:none}
 li.now{background:#23a2e0;}
 
 /* 正文宽度 */
-.news-cons-s1{padding: 0 20px;color:#555;font-size: 16px;line-height:26px;padding:0px 0 26px;position: relative;}
+.news-cons-s1 {
+	padding: 0 20px;
+	color: #555;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 0px 0 26px;
+	position: relative;
+}
 .news-cons-s1 p{padding:10px 0;text-align:Justify;text-justify:inter-ideograph;}
 .news-link-bt{width:98px;height:22px;line-height:22px;font-size:12px;color:#9b9b9b;text-align:center;border:1px solid #9b9b9b;margin:0 auto;}
 .news-link-bt a{color:#9b9b9b;}
@@ -236,7 +243,11 @@ li.now{background:#23a2e0;}
 	.text-overflow{overflow: hidden;height: 500px }
 	.text-overflow-mask{position: relative;width: 100%;height: 120px;background-image: url("../images/mobile-more-text.png");background-size: 100% auto;z-index: 9999;position: absolute;bottom: 0px;left: 0px;background-repeat: no-repeat;}
 	.text-overflow-click{font-size: 14px;font-weight: bold; color: #324049;  margin-top:60px; margin-left: 40%; width: 20%; text-align: center; display: inline-block;}
-	.news-cons-s1{padding: 10px 20px;}
+	.news-cons-s1 {
+		    width: 100%;
+		/* padding: 10px 20px; */
+		/* box-sizing: border-box; */
+	}
 }
 
 @media (max-width:360px){

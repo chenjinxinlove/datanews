@@ -643,11 +643,10 @@ li {
 	position: relative;
 	font-size: 14px;
 	line-height: 20px;
-	color: #999;
+	color: #ccc;
 	padding-top: 5px;
 	padding-left: 0;
 	padding-right: 0;
-	font-style: italic;
 }
 
 .photo-next {
@@ -883,8 +882,8 @@ li.now {
 .news-cons-s1 {
 	width: 930px;
 	margin: 19px auto;
-	color: #79797a;
-	font-size: 22px;
+	color: #3e3a39;
+	font-size: 16px;
 	line-height: 26px;
 	padding: 0px 0 26px;
 	position: relative;

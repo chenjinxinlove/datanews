@@ -114,7 +114,10 @@
             if(self._isrange){
                 self._getMousePoint(_e);
                 var  _width = _e.touches[0].pageX - self.touch.startX
-                
+                if (self.touch.left_bar.indexOf('%') !== -1) {
+                    self.touch.left_bar = width_img * (self.touch.left_bar.replace('%', '') / 100)
+                }
+                // alert(self.touch.left_bar)
                 var left_js =Number(self.touch.left_bar) + _width;
                 if (left_js < 0 || left_js > width_img) {
                     return;

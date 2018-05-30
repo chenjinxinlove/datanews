@@ -27,6 +27,9 @@
     <script src="js/echarts.min.js" defer></script>
     <script src="js/rain_echarts.js" defer></script>
     <script src="js/pushPull.js" defer></script>
+    <script>
+        var vConsole = new VConsole();
+    </script>
     <style>
         html,
         body {
@@ -225,33 +228,25 @@
             <p>
 
         </div>
-        <section class="main-img" id="main-img">
+        <div style="height: 1px;overflow: hidden"></div>
+        <div class="main-img" id="main-img">
             <img class="img img1" id="img1" src="./img/3-1972.jpg" alt="">
             <img class="img img2" id="img2" src="./img/3-2016.jpg" alt="">
             <div class="operation" id="operation"></div>
-        </section>
+        </div>
         <script>
             $(function () {
-
                 $(".ts h1 span").click(function () {
-
                     var ts = $(".ts h1 span").index(this);
-                    // if ($(this).hasClass('m')) {
-                    //     $(this).removeClass();
-                    // } else {
-                    //     $(this).addClass("m");
-                    // }
-                    $(this).toggleClass('m')
-                    // $(".ts h1 span").removeClass("m");
-                    // $(this).addClass("m");
+                    $(".ts h1 span").removeClass("m");
+                    $(this).addClass("m");
                     if (ts == 0) {
                         $(".biao p i").hide();
-                    } 
+                    }
                     if (ts == 1) {
                         $(".biao p i").hide();
                         $(".biao p").each(function (index, element) {
-                            $(".biao p").eq(index).find("i").show();
-                            $(".biao p").eq(ts - 1).find("i").hide();
+                            $(".biao p").eq(index + 1).find("i").show();
                         });
                     }
                     if (ts == 2) {

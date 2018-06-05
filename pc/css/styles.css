@@ -265,7 +265,7 @@ body {
 }
 
 .droughtFlood li {
-    line-height: 17px;
+    /* line-height: 17px; */
     height: 40px;
     font-size: 14px;
     cursor: pointer;
@@ -273,7 +273,7 @@ body {
 
 .droughtFlood li span {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .droughtFlood li span:nth-child(2) {
@@ -281,154 +281,52 @@ body {
 }
 
 .han {
-    margin-left: 12px;
-    margin-bottom: 20px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #d64e17;
+    height: 23px;
+    width: 23px;
+    background: url(https://zky.koocdn.com/club/picture/7b4ebb1baed7432eba11df2dc7d4c97d.png) no-repeat center;
 }
 
-.han:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    border: 1px solid #d64e17;
-}
 
 .hanActive span:nth-child(1) {
-    background-color: #d64e17;
+    background: url(http://zky.koocdn.com/club/picture/2cd449e0747e47afbf7216403bb104e1.png) no-repeat center;
 }
 
 .bjhan {
-    margin-left: 13px;
-    margin-bottom: 20px;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #e19f7a;
-}
-
-.bjhan:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    border: 1px solid #e19f7a;
+    height: 23px;
+    width: 23px;
+    background: url(https://zky.koocdn.com/club/picture/7af6e8af75534862b6c27d29337b22a4.png) no-repeat center;
 }
 
 .bjhanActive span:nth-child(1) {
-    background-color: #e19f7a;
+    background: url(https://zky.koocdn.com/club/picture/4c22847152984be18d3eb88ccdd5e27a.png) no-repeat center;
 }
 
 .lao {
-    margin-left: 11px;
-    /* margin-right: 20px; */
-    /* margin-bottom: 20px; */
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #016199;
+    height: 23px;
+    width: 23px;
+    background: url(https://zky.koocdn.com/club/picture/369a84ab85c2451d93ff4c30a952f8a3.png) no-repeat center;
 }
-
-.bjlao {
-    margin-left: 24px;
-    margin-bottom: 20px;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #90dbff;
-}
-
-.bjlao:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    border: 1px solid #00416f;
-}
-
-.bjlaoActive span:nth-child(1) {
-    background-color: #90dbff;
-}
-
-.lao:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    border: 1px solid #016199;
-}
-
 .laoActive span:nth-child(1) {
-    background-color: #016199;
+    background: url(https://zky.koocdn.com/club/picture/5224c3ebc9604b7ebbb5d6be035b56d7.png) no-repeat center;
 }
-
 .bjlao {
-    margin-left: 13px;
-    margin-bottom: 20px;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #90dbff;
-}
-
-.bjlao:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    border: 1px solid #90dbff;
+    height: 23px;
+    width: 23px;
+    background: url(https://zky.koocdn.com/club/picture/cba047a4a5ea4ceb8879bcc3666e3bdc.png) no-repeat center
 }
 
 .bjlaoActive span:nth-child(1) {
-    background-color: #90dbff;
+    background: url(https://zky.koocdn.com/club/picture/f6ef3962ef4a41caa69214217f5f973c.png) no-repeat center;
 }
 
 .normal {
-    margin-left: 13px;
-    margin-bottom: 20px;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #e2e9ee;
-}
-
-.normal:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    border: 1px solid #e2e9ee;
+    height: 23px;
+    width: 23px;
+    background: url(https://zky.koocdn.com/club/picture/7f8e3a12fd714feaaec60b1441aa9d55.png) no-repeat center;
 }
 
 .normalActive span:nth-child(1) {
-    background-color: #e2e9ee;
+    background: url(https://zky.koocdn.com/club/picture/1029ee7d82634835a0b09267dcb14940.png) no-repeat center;
 }
 
 /*.normal{*/

@@ -1,8 +1,35 @@
 //旱涝显示
-var incidentArr = [{'dynasty': '1628年-1644年 明末爆发李自成、张献忠等农民起义', 'year': '1630'},
-    {'dynasty': '1877-1878 年发生“丁戊奇荒”特大旱灾灾荒', 'year': '1877'},
+var incidentArr = [
+    {
+        'dynasty': '16世纪中期，明朝时期玉米引入中国',
+        'year': '1550'
+    },
+    {
+        'dynasty': '康熙中期，因土地复垦和气候趋于冷干，长江江水由清变浊，延续至今',
+        'year': '1690'
+    },
+    {
+        'dynasty': '19世纪，黄河下游连年遭水旱灾害，山东、河北、山西成千上万灾民"闯关东"，并一直持续至民国时期',
+        'year': '1820'
+    },
+    {
+        'dynasty': '太平天国运动爆发',
+        'year': '1851'
+    },
+    {
+        'dynasty': '光绪年间发生百年不遇大旱灾"丁戊奇荒"，导致2000多万人死亡',
+        'year': '1887'
+    },
+    
     {'dynasty': '1899-1901年 清末爆发义和团农民起义', 'year': '1900'},
-    {'dynasty': '1998年 长江流域、松花江、嫩江流域发生特大洪水', 'year': '1998'}]
+    {
+        'dynasty': '河南发生大旱灾，夏秋两季大部绝收，河南大旱，千百万民众离乡背井、外出逃荒。',
+        'year': '1943'
+    },
+    {
+        'dynasty': '长江流域、松花江流域发生特大洪水，直接经济损失达1660亿元 ',
+        'year': '1998'
+    }]
 var dateList = 548;
 var totalWidth = 882;
 var showType = {
@@ -237,40 +264,51 @@ function showDot() {
                 $('.timeShow').text(1470 + start_time + '年');
                 
                 if(!hoverShow) {
-                    if(start_time > 158 && start_time < 162 ) {
+                    if(start_time > 80 && start_time < 90 ) {
                         $('.info-incident').eq(0).show()
                     }else {
-                        setTimeout(function() {
-                            $('.info-incident').eq(0).hide()
-                        }, 10000)
-                        
+                        $('.info-incident').eq(0).hide()                       
                     }
 
-                    if(start_time > 406 && start_time < 408 ) {
+                    if (start_time > 210 && start_time < 230) {
                         $('.info-incident').eq(1).show()
-                    }else {
-                        setTimeout(function() {
-                            $('.info-incident').eq(1).hide()
-                        }, 10000)
-                        
+                    } else {
+                        $('.info-incident').eq(1).hide()
                     }
 
-                    if(start_time > 429 && start_time < 432 ) {
+                    if (start_time > 340 && start_time < 360) {
                         $('.info-incident').eq(2).show()
-                    }else {
-                        setTimeout(function() {
-                            $('.info-incident').eq(2).hide()
-                        }, 10000)
-                        
+                    } else {
+                        $('.info-incident').eq(2).hide()
                     }
 
-                    if(start_time > 527 && start_time < 529 ) {
+                    if (start_time > 370 && start_time < 390) {
                         $('.info-incident').eq(3).show()
-                    }else {
-                        setTimeout(function() {
-                            $('.info-incident').eq(3).hide()
-                        }, 10000)
-                        
+                    } else {
+                        $('.info-incident').eq(3).hide()
+                    }
+
+                    if (start_time > 415 && start_time < 422) {
+                        $('.info-incident').eq(4).show()
+                    } else {
+                        $('.info-incident').eq(4).hide()
+                    }
+                    
+                    if (start_time > 430 && start_time < 440) {
+                        $('.info-incident').eq(5).show()
+                    } else {
+                        $('.info-incident').eq(5).hide()
+                    }
+
+                    if (start_time > 470 && start_time < 480) {
+                        $('.info-incident').eq(6).show()
+                    } else {
+                        $('.info-incident').eq(6).hide()
+                    }
+                    if (start_time > 525 && start_time < 535) {
+                        $('.info-incident').eq(7).show()
+                    } else {
+                        $('.info-incident').eq(7).hide()
                     }
 
                 }

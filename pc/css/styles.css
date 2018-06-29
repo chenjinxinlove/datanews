@@ -523,7 +523,15 @@ body {
     right: 3px;
     cursor: pointer;
 }
-
+.circle-circel {
+    /* position: absolute; */
+    /* display: none; */
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: ripple 0.7s linear infinite;
+}
 .scale-incident:hover {
     border: 2px solid #dc9422;
     height: 8px;
@@ -531,7 +539,14 @@ body {
     top: 1px;
     cursor: pointer;
 }
-
+.selectDom{
+    display: none;
+    width: 150px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f2eb;
+}
 .scale-incident:hover .info-incident {
     display: block;
     transition: all 100ms

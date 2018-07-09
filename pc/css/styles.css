@@ -25,7 +25,7 @@ body {
     height: 46px;
     position: absolute;
     left: 0px;
-    bottom: 89px;
+    bottom: 43px;
     cursor: pointer;
 }
 
@@ -511,6 +511,7 @@ body {
 .info-incident {
     display: none;
     position: absolute;
+    text-indent: 0em;
     width: 150px;
     padding: 5px;
     line-height: 1.5;

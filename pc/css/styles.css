@@ -3,7 +3,9 @@ body {
     margin: 0;
     color: #000;
 }
-
+.info-incident{
+    text-indent: 0;
+}
 .map {
     background-image: url("../images/map-bg.png");
     background-repeat: no-repeat;
@@ -25,7 +27,7 @@ body {
     height: 46px;
     position: absolute;
     left: 0px;
-    bottom: 89px;
+    bottom: 42px;
     cursor: pointer;
 }
 

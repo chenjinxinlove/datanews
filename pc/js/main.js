@@ -20,6 +20,12 @@ $(document).ready(function(){
     // }
 });
 
+var img = new Image();
+        img.src ='http://zky.koocdn.com/club/picture/2cd449e0747e47afbf7216403bb104e1.png';
+        img.src ='https://zky.koocdn.com/club/picture/4c22847152984be18d3eb88ccdd5e27a.png';
+        img.src = 'https://zky.koocdn.com/club/picture/5224c3ebc9604b7ebbb5d6be035b56d7.png';
+        img.src='https://zky.koocdn.com/club/picture/f6ef3962ef4a41caa69214217f5f973c.png';
+        img.src='https://zky.koocdn.com/club/picture/1029ee7d82634835a0b09267dcb14940.png'
 // 加载图片的函数
 // 加载图片的函数
 function loadNBSourcePic() {

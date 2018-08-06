@@ -27,11 +27,7 @@ body {
     height: 46px;
     position: absolute;
     left: 0px;
-<<<<<<< HEAD
-    bottom: 43px;
-=======
-    bottom: 42px;
->>>>>>> e7c0eafef767749126bf138effafab9ed8d1502d
+    bottom: 40px;
     cursor: pointer;
 }
 
@@ -733,7 +729,7 @@ body {
 
 .top .center {
     width: 347px;
-    height: 666px;
+    height: 679px;
     position: absolute;
     top: 0;
     left: 0;

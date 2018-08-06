@@ -75,6 +75,6 @@ input[type="range"]:focus+.rangeslider .rangeslider__handle {
   top: -26px;
   left: 0px;
   width: 100px;
-  font-size: 14px;
+  font-size: 16px;
   color: #dc921e;
 }

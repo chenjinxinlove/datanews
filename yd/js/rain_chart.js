@@ -57,7 +57,7 @@ var winHeight = $(window).height();
 
 
 var mapHeight = 750;
-var mapShiftTop = mapHeight + 130 - winHeight;
+var mapShiftTop = mapHeight + 230 - winHeight;
 if (mapShiftTop < 0) mapShiftTop = 0;
 $(".map").css("height", winHeight + mapShiftTop - 130 + "px").css("margin-top", "-" + mapShiftTop + "px").css('-webkit-transform', 'scale(0.4)')
 

@@ -83,13 +83,13 @@ ul,li{list-style:none}
 .header{background-color: #595758; height: 40px; width: 100%; position:absolute;top: 0px; left: 0px; z-index: 9999}
 .cover-title{position:relative;top: 0px; z-index: 1000000; margin: 0 auto}
 .map-wrapper{
-    height: 78%;
+    height: 90%;
     position: relative;
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
 }
-.interactive-wrapper{position:relative; margin:0 auto; width: 1000px; height: 98%;  }
+.interactive-wrapper{position:relative; margin:0 auto; width: 1000px; height: 70%;  }
 .chart{background-color:rgba(255,255,255,0.4);}
 .disaster-title{text-align: left;}
 .flood-video-control{width: 100%; height: 5px; position: absolute;bottom: 0px; left: 0px; background-color: rgba(0,0,0,0.4);z-index: 2}
@@ -142,7 +142,7 @@ ul,li{list-style:none}
 .chart-nav-points{z-index:9999;width:100%;height:5px;line-height:5px;position:absolute;text-align:center; right:0px; top:100%; }
 .chart98 ul.chart-nav-points li{display:inline-block;*display:inline;*zoom:1;width:24.5%;height:5px;line-height:5px;background:#ccc;margin:0px 0px;border-radius:0;position: relative; top:0px; margin-right: 0.5%}
 .dilishu-nav-points{z-index:9999;width:100%;height:5px;line-height:5px;position:absolute;text-align:center; right:0px; top:99%;  }
-.dilishu ul.dilishu-nav-points li{display:inline-block;*display:inline;*zoom:1;width:16%;height:5px;line-height:5px;background:#ccc;margin:0px 0px;border-radius:0;position: relative; top:0px; margin-right: 0.65%}
+.dilishu ul.dilishu-nav-points li{display:inline-block;*display:inline;*zoom:1;width:10%;height:5px;line-height:5px;background:#ccc;margin:0px 0px;border-radius:0;position: relative; top:0px; margin-right: 0.65%}
 
 }
 /*========================*/

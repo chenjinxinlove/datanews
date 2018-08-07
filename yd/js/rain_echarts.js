@@ -15,6 +15,7 @@ $(function () {
             },
             grid: [{
                 bottom: '10%',
+                left: '15%'
             }]
         }
         this.data = {

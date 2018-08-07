@@ -122,6 +122,9 @@
                 if (left_js < 0 || left_js > width_img) {
                     return;
                 }
+                if (left_js < 13) {
+                    left_js = 13
+                }
                 self._bar.style.left = left_js +  "px";
                 self._push.style.clip = "rect(0px," + left_js +"px,"+ self._rangeH +"px,0px)" ;
             }

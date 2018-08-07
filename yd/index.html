@@ -20,16 +20,16 @@
     <script src="js/d3.min.js" charset="utf-8"></script>
     <script src="js/jquery.js"></script>
 
-    <script src="http://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script>
+    <!-- <script src="http://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script> -->
     <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.js"></script>
     <script src="js/draggable_fix.js"></script>
     <script src="js/rangeslider.min.js"></script>
     <script src="js/echarts.min.js" defer></script>
     <script src="js/rain_echarts.js" defer></script>
     <script src="js/pushPull.js" defer></script>
-    <script>
+    <!-- <script>
         var vConsole = new VConsole();
-    </script>
+    </script> -->
     <style>
         html,
         body {
@@ -49,7 +49,7 @@
 <body>
     <div class="loading" style="display: block;">
         <div class="lds-css">
-            <div class="lds-gear" style="100%;height:100%">
+            <div class="lds-gear" style="width:100%;height:100%">
                 <div>
                     <div></div>
                     <div></div>
@@ -71,16 +71,197 @@
         <div class="scroll-down"></div>
     </div>
     <div class="main">
+        <!-- 第一段 -->
         <div class="news-cons-s1 text-overflow">
             <h1 style="text-align:center; height:30px; line-height:40px">前　　言</h1>
-            <p>中国处于季风气候区，最热的时候正是雨水最丰沛的季节，决定了农耕文明的发展必须需要适应非旱即涝的异常变化。</p>
-
-            <p>从远古时期，中国人就与旱涝做斗争，长历时、高强度的降水引起的洪涝灾害与长期降水不足造成的严重旱灾经常交替出现，一直是我国面临的主要灾害。</p>
-
-            <p>1470至2017年，从明朝至今长达548年，虽然社会几度变迁，旱涝却深刻影响着农耕文化为主要核心的中华文明，例如朝代更替、人口迁移等。即使在工业化迅速发展的今天，旱和涝依然是无法回避甚至影响社会生活的最严重自然灾害。</p>
-
+            <p>中国大部分地区处于季风气候区，尤其是东部平原地区，最热的时候正是雨水最丰沛的季节。雨热同期的气候一方面为我国农业发展提供了非常有利的自然环境，另一方面气候突变带来的旱涝灾害又会严重制约农耕文明的发展。</p>
+            <p>从远古时期，中国人就与旱涝做斗争。经常交替出现的洪涝灾害与旱灾，一直是我国面临的主要灾害。</p>
+            <p>我们搜集、整理了《中国近五百年旱涝分布图集》等历史资料，从中梳理出1470至2017年间的旱涝数据，试图用可视化的形式，展示548年来我国经历的旱涝气候变化规律，挖掘那些重大旱涝灾害事件及社会历史影响，从而为当代社会应对旱涝灾害提供借鉴。</p>
+            <div class="photo" style="height: 325px;">
+                <ul class="photo-album photo-album1" style="height: 325px;">
+                    <li>
+                        <div class="photo-album-frame" style="display:block">
+                            <div class="photo-album-pic">
+                                <img src="phone/1.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                重庆奉节招待所墙上“同治九年（1870年）季夏洪水至此。光绪九年仲秋立。”（来源：《中国历史大洪水》）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/2.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1929年香港旱灾，市民在街头轮流取水（来源：中国气象灾害大典）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/3.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1931年，长江流域发生大洪水。图为武汉城水灾情况。（来源：中国气象灾害大典）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/4.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1942年夏到1943年春，河南发生大旱灾，夏秋两季大部绝收。大旱之后，又遇蝗灾。饥荒遍及全省110个县。图片为1943年2月底至3月初，美国《纽约时报》记者福尔曼与《时代》周刊记者白修德在河南灾区实地采访时拍摄逃荒的饥民。
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/5.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1954年，长江中下游地区发生了百年未遇的特大洪灾，其雨期之久，洪峰来势之猛，灾区范围之广，均为历年所罕见。据不完全统计，湖南、湖北、江西、安徽、江苏五省123个县市受灾，受灾人口1888万人，死亡3.3万人，京广铁路不能正常通车达100天，直接经济损失100亿元。湖北损失惨重，全省受灾人口1034万人。图为经过加固加高工程后的汉口沿江防水墙。（来源：中国气象灾害大典）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/6.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1972年发生强厄尔尼诺事件，大气环球大范围异常变化，出现全球性干旱，中国全年受旱面积3069.93公顷，其中北方的旱灾为建国以来所罕见。据当年10月1日统计，北京、河北、山西、辽宁、吉林、山东、河南、甘肃等8省市91座大型水库蓄水量较1971年同期减少100.43亿立方米。（来源：中国气象灾害大典）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/7.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1975年8月，受台风“尼娜”影响，河南省南部淮河流域出现特大暴雨，导致60多座水库溃坝，近1万多平方公里受灾。《中国历史大洪水》记载，河南省29个县市、1700万亩农田被淹，其中1100万人受灾，超过3万人死亡。图为京广铁路遂平段被洪水冲毁。（来源：中国气象灾害大典）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/8.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1981年7月15日洪水中的四川南充城。（来源：《中国历史大洪水》）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/9.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1983年夏天，陕西、四川、山西等省出现大暴雨，造成山洪暴发，汉江、渠江、嘉陵江等江河水位猛涨。其中，汉江安康河段洪水来势凶猛，洪水超过安康城堤1-2米。图为8月1日，安康老城区大桥以南至油厂地段因洪水变为废墟。（来源：中国气象灾害大典）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/10.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                1998年洪水，包括长江、嫩江、松花江发生全流域型的特大洪水，全国受灾面积3.18亿亩，受灾人口2.23亿人，死亡3004人，直接经济损失达1660亿元。图为当年8月10日，江西省九江县江洲大堤上，灾民彭爱珍抱着她11个月大的女儿扬兰在寻找“家”，三个小时后，几经周折终于回到了仍然泡在洪水中的“家”，见到了离别11天的丈夫。
+                                （来源：李洁军 / 东方IC）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/11.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                2006年夏季，川渝地区严重的高温干旱造成了两地饮水困难1887万人，农作物受旱面积320多万公顷，粮食减产500万吨左右。图为8月13日，在旱情严重的四川省遂宁市大英县隆盛镇犀牛石村，两名儿童在干涸的池塘里玩耍。（来源：新华网）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/12.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                2010年，贵州省持续干旱造成黄果树大瀑布大“瘦身”，漂流景区水位也大幅度下降为平时的1/4左右。（来源：人民网）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/13.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                2012年7月21日，北京暴雨疯狂肆虐，雨量历史罕见。全市受灾人口达190万人，其中79人遇难，经济损失近百亿元。图为一辆双层公共汽车被积水围困于莲花桥附近，北京消防迅速出动警力和周边群众一同营救出被困乘客和公交司机共11人。(来源：新华网)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/14.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                2013年8月14日以来，东北发生严重洪涝灾害，松花江发生1998年来最大流域性较大洪水，黑龙江发生1984年以来最大流域性大洪水，辽河流域浑河上游发生超50年一遇特大洪水。黑龙江、吉林、内蒙古(东部)、辽宁合计受灾1030万人，死亡116人、失踪88人，直接经济损失591亿元。图为中国最东端的抚远气象站被洪水围困。（来源：中国天气网）
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo-album-frame">
+                            <div class="photo-album-pic">
+                                <img src="phone/15.jpg" width="100%">
+                            </div>
+                            <div class="photo-album-caption">
+                                2016年5月4日以来，江南、华南及西南地区东部等地遭受了强对流、暴雨洪涝及引发的山洪、泥石流等灾害。图为7月4日，安徽省太湖县新仓镇呜山村村民房屋被洪水淹没。（来源：新华网 张峭春 陈扬 摄）
+                            </div>
+                        </div>
+                    </li>
+                    <ul class="sub-head-points" style="top: 400px;">
+                        <li class="now"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </ul>
+            </div>
+            <p>我们发现，在这段距当代社会最接近也是社会变革最剧烈的一段历史中，不管社会形态经历几度变迁，旱涝总是在或多或少影响着农耕文化为核心的中华文明，例如朝代更替、人口迁移等。 旱和涝依然是我们无法回避的重要自然灾害。</p>
         </div>
-        <div class="part part-3">
+
+        <!-- 第一段 -->
+
+        <!-- 第二段 -->
+        <div class="news-cons-s1 text-overflow">
+            <h1 style="text-align:center; height:30px; line-height:40px">格局：旱涝交替</h1>
+            <p>中国地貌复杂，范围跨度大，各地年降水量季节分配很不均匀，雨季集中在5到10月，这几个月的降水一般占全年总降水量80%左右，其多寡本基本会决定当年旱涝状况。</p>
+            <p>548年来，中国可谓旱涝频发，几乎每年都有区域性或局地性的旱灾或涝灾。</p>
+        </div>
+        <div class="part part-3" style="position: reslate">
+            <div style="width:100%;height:550px;position:absolute;top:0;left:0;z-index:10;"></div>
             <p class="title" style="font-size:14px; height:auto">1470（明朝）-2017年
                 <br>中国旱涝演变历程</p>
             <div class="interactive-wrapper">
@@ -92,10 +273,10 @@
                     <div class="map-part1-timeline-pointer"></div>
                 </div>
                 <input type="range" min="0" max="546" step="1" value="0" />
-                <div class="map-replay zt" alt="暂停播放">
+                <!-- <div class="map-replay zt" alt="暂停播放"> -->
                 </div>
-                <div class="map-zoom pc-only" alt="放大地图"></div>
-                <div class="map-zoom-out pc-only" alt="缩小地图"></div>
+                <!-- <div class="map-zoom pc-only" alt="放大地图"></div>
+                <div class="map-zoom-out pc-only" alt="缩小地图"></div> -->
 
                 <ul class="droughtFlood">
                     <li class="laoActive" style="line-height: 11px;">
@@ -182,56 +363,57 @@
         </style>
 
 
-        <div class="news-cons-s1 " style="clear:both; margin-top:50px;">
-            <h2 class="ejbt">548年来 中国一半时间非旱即涝</h2>
-
-            <p>中国各地年降水量季节分配很不均匀，大多数地区降水集中在5月-10月，该时段降水一般占全年降水量80%左右，往往决定了当年的年景是偏涝、偏旱还是正常。</p>
-
-            <p>548年来，中国旱涝频发，总计约219年，也就是说，在这五百多年时间里，中国大约有一半时间里，处于涝或者旱状态。而且即使未发生全国范围的旱涝灾害，但由于我国幅员十分辽阔，季风气候的年际变率较大，夏季风起止时间早晚及强度的差异，也会导致几乎每年都存在个别地区偏涝或偏旱现象。</p>
+        <div class="news-cons-s1 " style="clear:both;">
+            <p>分布不均的降水造就了多样的旱涝分布格局。我国旱涝格局通常有6种类型，即全国旱、全国涝、南北方涝长江流域旱、南北方旱长江流域涝、北方涝南方旱、北方旱南方涝等。总的来说，全国涝多于全国旱，北旱南涝多于北涝南旱型，长江流域涝多于旱。</p>
+            <div class="chart dilishu">
+                <ul class="dilishu-nav-points">
+                    <li class="now"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="chart-slides">
+                    <li style="display: block;">
+                        <img src="img/1931.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/1959.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/1963.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/1972.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/1991.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/1999.jpg" width="100%">
+                    </li>
+                </ul>
+            </div>
+            <p>我国旱涝格局中最常见的是“北旱南涝”格局，大约平均每4年就可能出现一次，也就是说大多年份南方易偏涝，北方偏旱。容易发生涝灾的地区主要集中在东部地区尤其是长江中下游及以南地区，旱灾最易发生在华北平原及西北的陕甘宁地区。</p>
+            <p>而最少见的是“北涝南旱”格局，大约平均每9年一次，17和18世纪就曾出现过。例如，清朝乾隆年间的1756-1757年多雨地区向北移动，导致北方持续多雨，连续2年“北涝南旱”格局的状况在历史上更为少见。</p>
             <p>
-                明朝至今，年景偏涝的年份多于偏旱，分别是133年和86年，大约每四年中国就会发生一次水灾。</p>
-            <p>
-                <img src="img/1.jpg" style="width:100%">
-            </p>
-            <p>综观548年的历史数据，最旱和最涝的年份均出现在明朝中后期，都呈现出全国性的特点，最涝的年份出现在1569年，最旱的则是1528年和1640年。</p>
+                新中国成立后，我国气候总体维持“北旱南涝”格局，华北、东北东南部及西北东部降水持续偏少，长江流域洪涝灾害增多。不过，西北部干旱、半干旱地区近30年来降水持续增加，日渐呈现“暖湿化”倾向。
+                <p>
+                    <p>旱涝不均跟我国地域辽阔且季风气候年际变率大有密切关系。夏季风的异常变动会直接导致中国汛期降水的时空差异。当夏季风较弱时，雨带长期在南方徘徊，导致雨季长，雨量大，可能形成涝灾，同时造成北方雨季短，雨量少，可能形成旱灾。这时就会出现北方偏旱、南方偏涝情况。反之，则会造成南方偏旱、北方偏涝。</p>
 
+                    <div class="photo-wrapper">
+                        <img src="./img/xj.jpg" alt="">
+                    </div>
         </div>
-        <div class="chart dilishu">
 
-            <div class="chart-title"></div>
-            <ul class="dilishu-nav-points">
-                <li class="now"></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul class="chart-slides">
-                <li style="display: block;">
-                    <img src="img/2-1569.jpg" width="100%">
-                </li>
-                <li class="chart-slide">
-                    <img src="img/2-1528.jpg" width="100%">
-                </li>
-                <li class="chart-slide">
-                    <img src="img/2-1640.jpg" width="100%">
-                </li>
-            </ul>
+        <!-- 第二段 -->
 
-        </div>
 
-        <div class="news-cons-s1 " style="clear:both; margin-top:50px;">
-
-            <p>1569年为隆庆三年，南北方均发生大水，“直隶淮、济、徐、沛及浙东西江、南江北大水，坏城垣，淹田舍，漂人畜无算”。 嘉靖六年至八年，也就是1527-1529年，黄河、淮海、长江、珠江等中上游部分地区发生特大旱灾。</p>
-            <p>而1528年受灾县域最为广泛，北畿（今北京、天津、河北）、湖广（今湖北、湖南）广、河南、山东、山西、陕西大旱，大饥荒爆发，受灾县次达11-27个，部分地区甚至出现了“饥人相食”的惨状，仅一年就发生了4次战争。</p>
-            <p>
-                中华人民共和国成立且有气象记录以来，最涝的两年均发生在厄尔尼诺次年，分别是2016年和1998年，最旱年出现在1972年，其次是1965年。过去不久的2016年，暴雨洪涝灾害南北齐发，全国共出现51次强降雨天气过程，平均降雨量为1951年以来最多，武汉、南京、合肥、新乡、安阳、石家庄、邯郸、太原等城市发生严重内涝，洪涝和地质灾害造成9954.9万人次受灾，直接经济损失3134.4亿元。干旱的致灾能力同样惊人。1972年因旱受灾面积为4.6亿亩，达到65%。不少地区水库干涸，河水断流，黄河在济南以下因干旱曾断流20天。北京在当年冬季甚至滴雨未降。
-            <p>
-
-        </div>
-        <div style="height: 1px;overflow: hidden"></div>
-        <div class="main-img" id="main-img">
-            <img class="img img1" id="img1" src="./img/3-1972.jpg" alt="">
-            <img class="img img2" id="img2" src="./img/3-2016.jpg" alt="">
-            <div class="operation" id="operation"></div>
+        <!-- 第三段 -->
+        <div class="news-cons-s1 text-overflow">
+            <h1 style="text-align:center; height:30px; line-height:40px">趋势：旱涝转换</h1>
+            <p>我国的旱涝格局并非一成不变，呈现准周期或者阶段性交替变化，每隔一段时间就会发生转换。尤其是东部区域旱涝变化的准周期性更加明显，大部地区周期为3年左右，而部分地区则会维持更长甚至百年左右的“世纪周期</p>
         </div>
         <script>
             $(function () {
@@ -286,9 +468,6 @@
                 })
             })
         </script>
-        <div class="news-cons-s1 " style="clear:both; margin-top:50px;">
-            <h1 style="text-align:center; height:40px; line-height:40px">旱涝总是交替出现</h1>
-        </div>
         <div class="ts">
             <h1>
                 <span class="m">全国</span>
@@ -300,7 +479,7 @@
                 <span>西南</span>
             </h1>
         </div>
-        <div class="biao">
+        <div class="biao" style="overflow: hidden">
             <div>
                 <img src="img/z.jpg">
             </div>
@@ -329,98 +508,74 @@
                 <img src="img/xn.jpg">
             </p>
         </div>
-        <div class="photo-wrapper" style="clear:both">
-
-            <p style="line-height:26px; font-size:16px; color:#555; padding:10px;">从历史经验看，我国多雨期和少雨期总是交替出现，每隔20-30年就会发生一次旱涝转换。17世纪之前，中国在以旱型年景为主，17世纪末至18世纪初，经历了由旱到涝的转变，19世纪期间，年景以涝型为主，期间出现几次持续时间较长的水灾，20世纪以后，全国依然是旱涝交织，但逐渐向旱型转变，旱灾次数明显增多。</p>
-            <img src="img/5.jpg" width="100%">
-            <p style="line-height:26px; font-size:16px; color:#555; padding:10px;">据研究，明朝在历史上处于偏冷的小冰期，几百年间整体偏旱。据分析，我国东部地区气候总体偏干。据统计，明朝长的连涝期分别出现在1564-1571年和1573-1580年，长的连旱期出现在1638-1643年，也就是明末发生的特大干旱。</p>
-            <p style="line-height:26px; font-size:16px; color:#555; padding:10px;">到了19世纪，是我国特大暴雨洪水频繁发生时期，各主要江河的历史首位特大洪水均出现在此时，而洪水年份前后，伴随出现了一系列的严重寒冷和干旱灾害。长历时、高强度的降水引起的洪涝灾害与长期降水不足造成的严重旱灾经常交替出现。</p>
-            <p style="line-height:26px; font-size:16px; color:#555; padding:10px;">20世纪以来，中国降水依然是旱涝交织。有专家分析，20世纪20年代为少雨期（1929年最少），50年代为多水年代，以后缓慢减少，70年代以后变化不大，但多雨带在80年代及以后由华北南移到长江中下游。</p>
-            <p style="line-height:26px; font-size:16px; color:#555; padding:10px;">数据统计，21世纪10年代以来，全国平均降水量较常年整体偏多，尤其是2016年，是有气象记录以来降水量最多的一年。</p>
+        <div style="height:10px;clear:bath"></div>
+        <div class="news-cons-s1 text-overflow">
+            <p>1470年以来，我国的旱涝分布几经突变。1470年至17世纪，中国偏旱和偏涝的年份都非常多，但以旱型年景为主，自东向西大致呈“东旱-中涝-西旱”带状分布；到了17世纪末至18世纪初，由旱转涝显著；19世纪期间，年景以涝型为主，出现几次持续时间较长的水灾；20世纪以后，全国逐渐向旱型年景转变，40年代中期至60年代中期较为湿润，80年代起再次转旱，其中华南和淮河流域及华北平原偏旱，长江以南和西北东部偏涝。</p>
+            <div class="photo-wrapper">
+                <img src="./img/5.jpg" alt="">
+            </div>
+            <p>虽然在过去五百年间有过多次干湿气候突变，但建国以来的1951-2010年，年降水量总体未出现显著变化趋势。从总体来说，最近的60年属于气候条件较好、相对稳定的时期，但仍需要警惕未来出现气候突变和重大气候灾害的可能性。</p>
+            <p>据《第三次气候变化国家评估报告》预测，到本世纪末，中国仍将持续降水变多的趋势。全国降水平均增幅为2%-5%，北方降水可能增加5%-15%，华南地区降水变化不显著。</p>
+            <img src="./img/rainchange.jpg" style="width: 100%;margin: 10px auto;
+                display: block;">
+            <p>降水多寡的突变对农业生产的影响巨大，往往直接导致粮食歉收甚至绝产，进而引发社会问题。例如，1644年，明朝灭亡北方各区结束了多年持续的干旱后，全国大部地区急速跃变转入持续多雨的状态，出现旱涝急转，加剧了明末大旱导致的灾情加剧。</p>
         </div>
 
-        <div class="news-cons-s1 " style="clear:both; ">
-            <h2 class="ejbt">“南涝北旱”格局可能依然持续</h2>
-            <p>中国的降水不仅年际间差异大，地域分配也极不均匀，频发局地性、区域性水旱灾害。几乎每年都有数省或流域大范围内遭受水灾或旱灾，而且往往是同年份同一地区发生连季旱涝或者连年旱涝的情况。</p>
+        <!-- 第三段 -->
 
-            <p>一般来说，我国以“南涝北旱”的分布类型为主，也就是说，大部分年份是南方易偏涝，北方易偏旱。容易发生水灾的地区主要集中在东部地区尤其是长江中下游及其以南地区，旱灾主要分布在华北平原及西北的陕甘宁地区。</p>
-            <img src="./img/13.png" width="100%">
-            <p>当夏季风较弱时，往往会出现南涝北旱，反之，则会北涝南旱。不过，南方偏旱、北方偏涝分布的情况也时有发生，尤其以17世纪较多，例如，1620-1629年，1650-1659年，1690-1709年，北涝多于北旱。</p>
-            <p>1961年以来，我国气候主要维持“南涝北旱”格局，大中城市中，北方城市年暴雨频次呈现减少趋势，大约平均每十年约减少0.05日，而南方地区暴雨频次在增多，平均每十年增加0.12日，也就是说，当前“南涝北旱”格局尚未见改变。</p>
-        </div>
-        <div class="news-cons-s1 ">
-            <h2 style="text-align:center; height:40px; line-height:40px">水旱中国</h2>
-            <p>自古以来，我国是一个“靠天吃饭”的农业为主社会，降水多寡往往直接导致农业减产、蝗灾、河道变化等问题，如果旱涝连年将进一步加重灾害灾荒，从而影响人类活动甚至社会变迁和朝代更替。</p>
-        </div>
-        <div class="photo" style="margin: 20px 0 10px 0">
-            <ul class="photo-album photo-album1" style="height: 310px;">				
-                <li>
-                    <div class="photo-album-frame" style="display:block">
-                        <div class="photo-album-pic">
-                            <img src="images/8.jpg" width="100%">
-                        </div>
-                        <div class="photo-album-caption">
-                            1942年夏到1943年春，河南发生大旱灾，夏秋两季大部绝收。大旱之后，又遇蝗灾。饥荒遍及全省110个县。图片为1943年2月底至3月初，美国《纽约时报》记者福尔曼与《时代》周刊记者白修德在河南灾区实地采访时拍摄逃荒的饥民。
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="photo-album-frame">
-                        <div class="photo-album-pic">
-                            <img src="images/10.jpg" width="100%">
-                        </div>
-                        <div class="photo-album-caption">1998年，长江流域发生特大洪水。据统计，1998年全国受灾面积3.18亿亩，受灾人口2.23亿人，死亡3004人，倒塌房屋685万间，直接经济损失达1660亿元。（来源：新华社）</div>
-                    </div>
-                </li>
-                
-                <ul class="sub-head-points" style="top: 400px;">
-                    <li class="now"></li><li></li>
-                </ul>
-            </ul>      
-        </div>
-        <div class="news-cons-s1 ">
-            <p>水旱灾害对人类的伤害各有特点。相对来说，旱灾的致命性在于其对农业生产的破坏力而且范围往往广泛，经常会造成绝产绝收，进而导致饥馑灾荒，特大型灾荒往往都是由旱灾制造的。1470年以来，明朝万历年间（1585-1590年）旱灾，明朝崇祯年间(1637—1643年）、清朝光绪初年的华北大旱灾（1875—1878年），民国时期1920年的北方五省大旱荒，1928至1930年的西北、华北大饥荒，1942至1943年的中原大饥荒和广东大饥荒，都是旱魃肆虐的突出表现。</p>
-            <p>其中以明崇祯末年的连续十年大旱灾和光绪初年的“丁戊奇荒”最厉害，这两次连续性干旱都造成非常严重的社会后果。中国历史上累次发生的农民起义，无不以荒年为背景，由此引起的社会动荡最严重的结果就是朝代更迭。</p>
-        </div>
-        <div class="photo-wrapper">
-            <img src="./img/7.gif" alt="">
-        </div>
-        <div class="news-cons-s1 ">
-            <p>明末（1637-1643年）连年干旱导致陕西、山西、河南、山东、河北、内蒙古、安徽、江苏、浙江、湖北、湖南、贵州、四川、甘肃等23个省相继遭受严重旱灾，河北、河南、山西、陕西、山东连旱五年以上，旱区中心所在的河南省连旱7年，几乎大半个中国皆陷于苦旱，累岁奇荒，村舍十室九空，以致“赤地千里，饿殍枕藉，人相食。”其中又以1640-1641年旱情最严重，波及范围最广。葛全胜认为，明末连旱事件有可能是中国东部地区过去2000年最为严重的一次持续性旱灾。1639年每石米价银一两，到了1640年，石米涨到银3两至5两，加上沉重的赋役，民不聊生，迫使农民揭竿而起，陕西关中爆发了李自成、张献忠农民起义，很快席卷大半个中国，并最终导致明朝的灭亡。
+        <!-- 第四段 -->
+        <div class="news-cons-s1 text-overflow">
+            <h1 style="text-align:center; height:40px; line-height:40px">影响：水旱中国</h1>
+            <p>旱灾和涝灾历来是影响中国最严重的自然灾害，他们发生频率高，据《历史时期中国重大自然灾害时空分异特征》统计分析，从公元前180年到1911年统计发生的重大自然灾害共计190次，其中旱灾和水灾就达到84次。</p>
+            <img src="./img/history.jpg" style="width: 100%;margin: 10px auto;
+                display: block;">
+            <p>旱涝灾害对长期以农业为主“靠天吃饭”的社会影响极大，往往直接导致农业减产或绝收，进而出现蝗灾、河道变迁等次生问题。如果灾害连年，则灾荒会进一步加重，甚至影响社会变迁或朝代更替。中国历史上多次发生的农民起义，很多是以旱涝导致的灾荒为背景。
+            </p>
+            <p>旱涝对人类社会的伤害各有不同。
+            </p>
+            <p>旱灾的致命性在于破坏力强、时间长且范围广泛，经常会造成大片绝产绝收，特大型灾荒往往是由持续干旱制造的。
+            </p>
+            <p>明清时期旱灾多发且致灾重，多次出现连续3年以上、干旱区域超过4个省份以上的重大干旱事件。
+            </p>
+            <p>尤为显著的是明朝万历年间（1585-1590年）6年大旱、明朝崇祯年间(1637—1643年）7年全国大旱、清朝乾隆年间（1784-1788年）5年旱灾和清朝光绪初年（1875—1878年）的“丁戊奇荒”大旱灾。
+            </p>
+            <img src="./img/GIF.gif" style="width: 100%;margin: 10px auto;
+                display: block;">
+            <p>这些严重的自然灾害导致剧烈的社会动荡，以1637-1643年发生的长达7年的全国大旱为例，这场波及南北23个省份的苦旱导致赤地千里，江河断流，泉井涸竭，禾苗干枯，颗粒无收，甚至发生人吃人的惨剧。灾荒成为农民起义的导火索，内忧外患之下明王朝走向灭亡。中国科学院地理科学与资源研究所研究员葛全胜认为，这可能是中国东部地区过去2000年最严重的一次持续性旱灾。
+            </p>
+            <p>同样，“丁戊奇荒”也引发了社会变革，迫使大批山西百姓背井离乡北上内蒙古，河北、山东饥民大量逃荒至产粮较丰的东北，这就是中国近代史上大规模的灾民迁徙潮“走西口”和“闯关东”，并持续至20世纪初。
+            </p>
+            <img src="./img/1877.jpg" style="width: 100%;margin: 10px auto;
+                display: block;">
+            <p>与大范围、持续性强的旱灾相比，水灾的特点在于其频繁。548年来，全国没有一年未出现大涝，有的范围大，有的局地性明显。
+            </p>
+            <p>所以虽然洪灾几乎年年都有，但影响严重的主要集中在几个特大水涝年，较为典型的有年份有1730、1755、1823、1931、1935、1954、1975、1998、2016年等。
+            </p>
+            <p>1998年爆发的百年不遇特大洪水就对经济社会造成极大危害。当时，长江、嫩江、松花江等江河同时洪水泛滥，长江上游出现8次洪峰，与中下游洪水遭遇，形成全流域型大洪水；嫩江、松花江出现150年来最严重的全流域特大洪水。洪灾造成29个省份的4150人死亡，直接经济损失2551亿元，灾害之严重，至今令人不寒而栗。
+            </p>
+            <section class="main-img" id="main-img">
+                <img class="img img1" id="img1" src="./img/han.jpg" alt="">
+                <img class="img img2" id="img2" src="./img/lao.jpg" alt="">
+                <div class="operation" id="operation"></div>
+            </section>
+            <p>总的来说，新中国成立以来，随着基础设施建设的进步以及预报手段和防灾减灾水平的提升，人类对旱涝和洪灾等气象自然灾害的抵抗能力明显增强。因旱涝灾害造成的人员伤亡数不断下降，且当代社会并未引发像古代那样的社会动荡和人口迁移。据统计，旱涝等气象灾害导致的死亡人数从20世纪80和90年代平均每年5000人降至21世纪的2000人左右。
+            </p>
+            <p>但是不容忽视的是，随着工业社会发展、城市化进程的推进，旱涝灾害所造成的经济影响更为严重。1965-1989，旱涝等气象灾害导致的平均直接经济损失（2013年价格）为1192亿元，而1990-2013年，这一数字蹿升至3079亿元，翻了2.6倍。气象灾害造成直接经济损失绝对值呈上升趋势。在气候灾害中，洪涝灾害造成的直接经济损失占气候灾害经济损失的比重最大。
             </p>
         </div>
-        <div class="photo-wrapper">
-            <img src="./img/8.gif" alt="">
-        </div>
-        <div class="news-cons-s1 ">
-            <p>清朝光绪元年至四年，也就是从1876～1879年，华北地区连续四年发生大旱。受灾地区有山西、河南、陕西、直隶（今河北）、山东等北方5省，并波及苏北、皖北、陇东和川北等地区。连昔日纵横泛滥、溃决频闻的黄河，也呈现出少有的枯水状况。据不完全统计，1876至1878年，仅山东等华北5省卷入旱灾的州县总数即分别为222、402和331个，旱区受灾民众约在1.6亿到2亿左右，约占当时全国人口的一半。大旱使农产品绝收，田园荒芜，以致于“饿殍载途，白骨盈野”，饿死的竟达1
-                000万以上，清朝官员每称之为有清一代“二百三十余年来未见之凄惨，未闻之悲痛”，被称之为“丁戊奇荒”。在清代频繁的旱灾中，最大、最具毁灭性的一次。</p>
-            <p>“丁戊奇荒”引发了中国近代史上大规模的灾民迁徙潮，其中尤以“走西口”和“闯关东”最为典型。“丁戊奇荒”迫使大批山西百姓背井离乡北上长城口外的蒙古，无以为生的山东饥民，大量外出逃荒至产粮较丰的东北奉锦一带，至1877年4月底，逃出山东而投奔他乡者已有300万人。</p>
-
-        </div>
-        <div class="photo-wrapper" style="">
-            <img src="./img/4.jpg" alt="">
-        </div>
-
-        <div class="news-cons-s1 ">
-            <p>水灾的危害在于其频繁性。据《历史时期中国重大自然灾害时空分异特征》统计分析，从公元前180年到1911年统计发生的重大自然灾害共计190次，雨涝导致的水灾是发生频率最高的灾害。 </p>
-            <p>新中国成立以来，随着基础设施建设的不断进步以及预报手段和防灾减灾水平的提升，人类对旱涝和洪灾等气象自然灾害的抵抗能力明显增强。因旱涝灾害造成的人员伤亡数不断下降，而且当代社会并未引发像古代那样的社会动荡和人口迁移。但不容忽视的是，随着工业社会的发展、城市化进程的快速发展，旱涝灾害对社会生活及经济等方面的影响更为深远，由此造成的经济损失。
-                </p>
-            <p> 据吴吉东等人统计分析，1949年-2013年，气象灾害造成的死亡人口绝对值和百万人口死亡率都有明显下降趋势，但气象灾害造成的直接经济损失绝对值呈上升趋势。综合来看，洪涝、台风等风暴类和干旱灾害、降水相关的滑坡、泥石流等次生灾害的影响呈上升趋势。</p>
-        </div>
         <div class="disaster-wrapper part news-cons-s1">
-            <div class="up" style="margin: 20px 10px">
-                <h2 class="disaster-text">1950-2016洪涝灾情统计</h2>
-                <ul id="disaster-up">
+            <div class="up">
+                <h2 class="disaster-text" style="padding: 0 10px;">1950-2016洪涝灾情统计</h2>
+                <ul id="disaster-up" style="padding: 0 10px;">
                     <li class="active">受灾面积</li>
                     <li>因灾死亡人口</li>
                     <li>直接经济损失</li>
                 </ul>
                 <div id="disaster-up-canvas"></div>
             </div>
-            <div class="down" style="margin: 20px 10px">
-                <h2 class="disaster-text">1950-2016旱灾情统计</h2>
-                <ul id="disaster-down">
+            <div class="down" style="margin-top:20px">
+                <h2 class="disaster-text" style="padding: 0 10px;">1950-2016旱灾情统计</h2>
+                <ul id="disaster-down" style="padding: 0 10px;">
                     <li class="active">受灾面积</li>
                     <li>粮食损失</li>
                     <li>直接经济损失</li>
@@ -429,24 +584,46 @@
                 <div id="disaster-down-canvas"></div>
             </div>
         </div>
-        <div class="news-cons-s1 ">
-            <h2 class="ejbt">为何旱涝灾害频繁且复杂？</h2>
-            <p>自古以来，我国旱涝灾害频繁与我国的气候和地理环境有紧密联系。</p>
-            <p>连续性的暴雨或短时间的大暴雨是造成洪涝灾害的重要原因，而我国是世界上多暴雨的国家之一。我国地理纬度跨越大，使我国气候从赤道带到寒温带跨越了6个温度带。由于我国位于亚欧大陆东岸，东濒太平洋，使我国东部成为全球最典型的的季风区之一。季风进退的早迟，直接影响我国各地雨季的出现和降水的多寡，成为旱涝频繁发生的有一个主要原因。
-            </p>
-            <p>
-                <img src="img/t10.jpg" width="100%">
-            </p>
-            <p>
-                我国地形十分复杂，高原盆地错落，高山河川纵横，气候更为复杂多样化。高大的山脉往往成为气候的分界线，山地以及四川盆地四周和太行山等地的迎湿风一侧都是多暴雨的地带。同时，我国西半部国土深入亚欧大陆腹地，来自海洋的水汽难于到达这一地区，使我国西北内陆成为极为干燥的大陆性气候区。
-                </p>
-        </div>
-        <div class="news-cons-s1 ">
-            <h2 style="text-align:center; height:50px; line-height:40px">结语</h2>
+        <!-- 第四段 -->
 
-            <p>中国的天灾之多，可能是世界之最。未来，在气候变化的背景下，极端灾害性天气将更频发，中国人面对的可能是更凶悍更频繁往复的旱涝天灾，势必需要以更科学、更有效的手段应对大自然的挑战。</p>
-            <p>前事不忘，后事之师。在应对旱涝灾害挑战上，除了科学技术的进步，气象历史资料是认识现代和未来的钥匙，历史变化序列可以弥补现代观测记录的不足，有助于认识现代在时代变化进程中的位置，而对过去情景的类比可以作为未来情景的早期预警，从而促进社会防灾减灾，建设美好生活。</p>
+
+        <div class="news-cons-s1 text-overflow">
+            <h1 style="text-align:center; height:40px; line-height:40px">成因：季风和地形</h1>
+            <p>在我国，旱涝频发与复杂而特殊的气候和地理环境有密切关系。
+            </p>
+            <p>我国东部地区是全球最典型的的季风区之一，其中夏季风对旱涝有显著的影响。夏季风有明显的季节性北进和南退，在5月中旬和6月上旬影响华南地区，6月中旬北跳至长江中下游一带，在那里维持至7月中旬，然后再次北跳，影响华北和东北地区。8月下旬开始，夏季风开始从北方迅速撤退至长江流域，在9月上旬回到南海北部地区，完成一次夏季风南北向的季节进退过程。
+            </p>
+            <p>夏季风来临的早晚、强度大小，向北推进的程度在年与年之间有显著差异。夏季风的这种年际变化造成了每年季节性大雨带，在雨带长期持续的地区降水过多，容易发生暴雨洪涝灾害，反之，易于发生干旱灾害。一般来说，夏季风强，大雨带能推至较北位置，使北方地区发生洪涝灾害而南方发生旱灾，若夏季风若，则北方易旱南方易涝。
+            </p>
+            <p>此外，我国地形十分复杂，高原盆地错落，高山河川纵横，气候类型复杂多样。高大的山脉往往成为气候的分界线，山地以及四川盆地四周和太行山等地的迎湿风一侧都是多暴雨的地带。同时，西部地区深入亚欧大陆腹地，来自海洋的水汽难于到达这一地区，是干燥的大陆性气候区，从而导致我国旱涝地区间差异极大。
+            </p>
+            <div class="chart dilishu">
+                <ul class="dilishu-nav-points">
+                    <li class="now"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="chart-slides">
+                    <li style="display: block;">
+                        <img src="img/zghlfb.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/zgds.jpg" width="100%">
+                    </li>
+                    <li class="chart-slide">
+                        <img src="img/zgqhlx.jpg" width="100%">
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div class="news-cons-s1 text-overflow">
+        <h1 style="text-align:center; height:40px; line-height:40px">结语</h1>
+        <p>中国天灾之多，当属世界之最。未来，在气候变化背景下，极端灾害性天气将更频发，中国人将面对更凶悍更频繁往复的旱涝天灾，势必需要以更科学有效手段应对大自然的挑战。</p>
+        <p>
+            《第三次气候变化国家评估报告》指出，当前我国应对重、特大旱涝等气象灾害的能力仍十分有限，应对大灾的防灾减灾效果不明显。因此，我们应把重、特大气象灾害尤其是旱涝的防御，作为应对气候变化的主要内容。
+        </p>
+        <p>前事不忘，后事之师。应对旱涝灾害的挑战，除了要充分利用先进科学技术，我们还可以充分研究历史气候变化资料，认识气候的过去、现代和未来，深入探索历史气候变化对人类社会的影响，弥补现代观测记录的不足，同时为气候预测提供更多依据，以便于更好地探索未来的前景，从而促进全社会防灾减灾水平。</p>
     </div>
     <style>
         .foot p {
@@ -454,11 +631,8 @@
         }
     </style>
     <div class="foot" style="margin-top: 10px">
-        <div style="padding:0px 10px; font-size:12px;color: rgba(255,255,255,0.6);">
-            <p>数据说明：本文所指旱涝均为气象意义上的指数变化，即各地每年的降水情况。在有完整气象记录之前，各地旱涝等级值主要依据史料记载评定，但在有降水量记录时，则主要依据实测降水量确定。</p>
-            <p>数据范围：本文数据均采用站点所在地区5-9月的降水量，共有120个站点，每个站点代表现在行政去华中的1-2个地区（或历史时期1-2个府）的范围</p>
+        <div style="margin:0 10px; font-size:14px;">
             <p>图片来源：封面封底图形来自新华网</p>
-
             <p>参考文献：《中国气象灾害大典》《中国历史大洪水》《中国水旱灾害》《1949-2013年中国气象灾害灾情变化趋势分析》、《21世纪中国的自然灾害发展趋势-以地震和旱涝灾害为例》、《文史参考》、《1876-1878年大范围持续干旱事件》《中国灾害通史》《中国近五百年的干旱》《中国历朝气候变化》《中国近80年来气候变化特征及其形成机制》</p>
         </div>
     </div>

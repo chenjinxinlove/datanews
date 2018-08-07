@@ -559,7 +559,7 @@ body {
 .info-incident {
     display: none;
     position: absolute;
-    width: 50px;
+    width: 80px;
     padding: 5px;
     line-height: 1.5;
     background: #f8f2ea;
@@ -655,7 +655,7 @@ body {
 
 .img1 {
     position: absolute;
-    clip: rect(0px, 275px, 360px, 0px);
+    clip: rect(0px, 190px, 360px, 0px);
     /* height: 100%; */
     /* width: 100%; */
 }

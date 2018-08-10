@@ -234,7 +234,7 @@ function chart98Ani(id){
     }
 
 }
-setInterval(function(){chart98Ani(chart98_id);},2500);
+setInterval(function(){chart98Ani(chart98_id);},2000);
 
 var dilishu_id=0;
 function dilishuAni(id){
@@ -254,7 +254,7 @@ function dilishuAni(id){
     }
 
 }
-setInterval(function(){dilishuAni(dilishu_id);},1000);
+setInterval(function(){dilishuAni(dilishu_id);},2000);
 // part 2
 $(".lead-box").height($(window).height() - 60 + "px")
 $(".sub-title-box").height($(window).height() - 22 + "px")

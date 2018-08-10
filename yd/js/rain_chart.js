@@ -1,38 +1,24 @@
-//旱涝显示
-var incidentArr = [{
-        dynasty: '16世纪中期，明朝时期玉米引入中国。',
-        year: '1550',
+var incidentArr = [
+    {
+        'dynasty': '1637-1643年7年大旱导致农民起义不断，明朝最终走向灭亡。',
+        'year': '1633'
     },
     {
-        dynasty: '康熙中期，因土地复垦和气候趋于冷干，长江江水由清变浊，延续至今。',
-        year: '1690',
+        'dynasty': '19世纪，连年旱涝导致山东、河北、山西灾民开始闯关东、走西口。',
+        'year': '1820'
     },
     {
-        dynasty: '19世纪，黄河下游连年遭水旱灾害，山东、河北、山西成千上万灾民"闯关东"，并一直持续至民国时期。',
-        year: '1820',
+        'dynasty': '1841-1843年，黄河连续发生3次大溃决。',
+        'year': '1840'
     },
     {
-        dynasty: '太平天国运动爆发。',
-        year: '1851',
+        'dynasty': '1942-1943年，河南夏秋两季作物因旱绝收，千百万民众外出逃荒。',
+        'year': '1943'
     },
     {
-        dynasty: '光绪年间发生百年不遇大旱灾"丁戊奇荒"，导致2000多万人死亡。',
-        year: '1887',
-    },
-
-    {
-        dynasty: '1899-1901年 清末爆发义和团农民起义。',
-        year: '1900'
-    },
-    {
-        dynasty: '河南发生大旱灾，夏秋两季大部绝收，河南大旱，千百万民众离乡背井、外出逃荒。',
-        year: '1943',
-    },
-    {
-        dynasty: '长江流域、松花江流域发生特大洪水，直接经济损失达1660亿元。',
-        year: '1998',
-    },
-]
+        'dynasty': '1998年长江、松花江发生特大洪水，直接经济损失达1660亿元。',
+        'year': '1998'
+    }]
 
 var dateList = 547;
 var winWidth = $(window).width();
@@ -59,7 +45,7 @@ var winHeight = $(window).height();
 var mapHeight = 750;
 var mapShiftTop = mapHeight + 230 - winHeight;
 if (mapShiftTop < 0) mapShiftTop = 0;
-$(".map").css("height", winHeight + mapShiftTop - 130 + "px").css("margin-top", "-" + mapShiftTop + "px").css('-webkit-transform', 'scale(0.4)')
+$(".map").css("height", winHeight + mapShiftTop - 230 + "px").css("margin-top", "-" + mapShiftTop + "px").css('-webkit-transform', 'scale(0.4)')
 
 if ($(window).width() <= 768) {
     $(".map").css("top", "100px");
@@ -95,7 +81,7 @@ var svg = d3.select(".map").append("svg")
     .attr("transform", "translate(0,0)")
     .style("z-index", 0)
 // .call(zoom);
-$(".map").draggable().resizable();
+// $(".map").draggable().resizable();
 //建立一个墨卡托投影
 var projection = d3.geo.conicConformal()
     .center([104.5, 36.3])
@@ -141,29 +127,29 @@ var i = 0;
 
 //放大缩小的功能
 // if($(window).width()>=768) {
-var zoomIndex = 1;
-$(".map-zoom").bind("click", function () {
-    if (zoomIndex == 1) {
-        $(".map").css('-webkit-transform', 'scale(1)').css("top", "50px").css("left", "-100px");
-    } else if (zoomIndex == 0) {
-        $(".map").css("margin-left", "-52%");
-        $(".map").css({
-            "transform": "scale(0.7)"
-        });
-    }
-    zoomIndex++;
-})
-$(".map-zoom-out").bind("click", function () {
-    if (zoomIndex == 1) {
-        $(".map").css('-webkit-transform', 'scale(0.4)').css("top", "100px").css("left", "0px");
-    } else if (zoomIndex == 2) {
-        $(".map").css("margin-left", "-52%");
-        $(".map").css({
-            "transform": "scale(0.7)"
-        });
-    }
-    zoomIndex--;
-})
+// var zoomIndex = 1;
+// $(".map-zoom").bind("click", function () {
+//     if (zoomIndex == 1) {
+//         $(".map").css('-webkit-transform', 'scale(1)').css("top", "50px").css("left", "-100px");
+//     } else if (zoomIndex == 0) {
+//         $(".map").css("margin-left", "-52%");
+//         $(".map").css({
+//             "transform": "scale(0.7)"
+//         });
+//     }
+//     zoomIndex++;
+// })
+// $(".map-zoom-out").bind("click", function () {
+//     if (zoomIndex == 1) {
+//         $(".map").css('-webkit-transform', 'scale(0.4)').css("top", "100px").css("left", "0px");
+//     } else if (zoomIndex == 2) {
+//         $(".map").css("margin-left", "-52%");
+//         $(".map").css({
+//             "transform": "scale(0.7)"
+//         });
+//     }
+//     zoomIndex--;
+// })
 // }
 
 function showDot() {
@@ -546,8 +532,25 @@ $('.droughtFlood li').bind('click', function (e) {
     }
 });
 setTimeout(function (params) {
-    $('.map').css({
-        transform: 'scale(0.4)',
-        'margin-left': '-81%'
-    })
+    var width = window.innerWidth;
+    if (width > 380) {
+        $('.map').css({
+            transform: 'scale(0.4)',
+            'margin-left': '-70.424%'
+        })
+    }
+    if (width < 380 && width > 330) {
+        $('.map').css({
+            transform: 'scale(0.4)',
+            'margin-left':  '-79.844%'
+        })
+    }
+    if (width < 330) {
+        $('.map').css({
+            'margin-top': '-333px',
+            'transform': 'scale(0.3)',
+            'top': '100px',
+            'margin-left':  ' -103.844%'
+        })
+    }
 }, 200);

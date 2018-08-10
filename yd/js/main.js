@@ -72,84 +72,84 @@ function initMainPage() {
 
 $(".ending").css("margin-top", ($(window).height() - 100) / 2 + "px");
 
-if ($(window).width() >= 768) {
-    $('#sroll-tip-image').attr('src', 'images/scroll-tip-pc.png');
-    $(".part-7,.part-0, .part-1, .part-9, .ending-bg").css("height", $(window).height() + "px")
-    //$(".cover-title").css("left",($(window).width()-990)/2+"px")
+// if ($(window).width() >= 768) {
+//     $('#sroll-tip-image').attr('src', 'images/scroll-tip-pc.png');
+//     $(".part-7,.part-0, .part-1, .part-9, .ending-bg").css("height", $(window).height() + "px")
+//     //$(".cover-title").css("left",($(window).width()-990)/2+"px")
 
-} else {
-    $(".title-left,.title-right").remove();
-    $(".part-7, .part-3, .part-9,.ending-bg").css("height", $(window).height() + "px");
+// } else {
+//     $(".title-left,.title-right").remove();
+//     $(".part-7, .part-3, .part-9,.ending-bg").css("height", $(window).height() + "px");
 
-    $(".text-overflow").append("<div class='text-overflow-mask'><span class='text-overflow-click'>阅读更多</span></div>");
-    $(".text-overflow-click").bind("touchstart", function () {
+//     $(".text-overflow").append("<div class='text-overflow-mask'><span class='text-overflow-click'>阅读更多</span></div>");
+//     $(".text-overflow-click").bind("touchstart", function () {
 
-        $(this).parent().parent().removeClass("text-overflow");
-        $(this).parent().remove();
-    })
-    //$(".bottom").css({"min-height":$(window).height() + "px"});
+//         $(this).parent().parent().removeClass("text-overflow");
+//         $(this).parent().remove();
+//     })
+//     //$(".bottom").css({"min-height":$(window).height() + "px"});
 
-    $(".dilishu").css("height", $(window).width() * 559 / 640 + "px");
-    $(".chart98").css("height", $(window).width() * 920 / 640 + "px");
+//     $(".dilishu").css("height", $(window).width() * 559 / 640 + "px");
+//     // $(".chart98").css("height", $(window).width() * 920 / 640 + "px");
 
-    $(".flood-video-control, .flood-video").remove();
-    $(".part-1").css("height", $("#flood-video").css("height"))
+//     $(".flood-video-control, .flood-video").remove();
+//     $(".part-1").css("height", $("#flood-video").css("height"))
 
-    $(".map").css("margin-left", "-52%");
-    $(".map").css({
-        "transform": "scale(0.7)"
-    });
-
-
-    var startY = 0,
-        moveY = 0; //手指移动距离
-    $(".part-0").bind("touchstart", function (e) {
-        startY = e.originalEvent.targetTouches[0].pageY;
-        e.preventDefault();
-    });
-    $(".part-0").bind("touchmove", function (e) {
-        moveY = e.originalEvent.targetTouches[0].pageY - startY;
-    });
-    $(".part-0").bind("touchend", function (e) {
-        if (moveY < -50) {
-
-            $('body,html').animate({
-                scrollTop: 0
-            }, function () {
-                scrollCount = 0
-            })
-            //$("#flood-video").attr("controls","controls");
-            $(".scroll-tip").fadeOut(1000);
+//     $(".map").css("margin-left", "-52%");
+//     $(".map").css({
+//         "transform": "scale(0.7)"
+//     });
 
 
-            //$("#cover-audio").trigger("pause");
-            $(this).animate({
-                top: "-" + ($(window).height() + 100) + "px"
-            }, 1000);
-        }
+//     var startY = 0,
+//         moveY = 0; //手指移动距离
+//     $(".part-0").bind("touchstart", function (e) {
+//         startY = e.originalEvent.targetTouches[0].pageY;
+//         e.preventDefault();
+//     });
+//     $(".part-0").bind("touchmove", function (e) {
+//         moveY = e.originalEvent.targetTouches[0].pageY - startY;
+//     });
+//     $(".part-0").bind("touchend", function (e) {
+//         if (moveY < -50) {
 
-    });
+//             $('body,html').animate({
+//                 scrollTop: 0
+//             }, function () {
+//                 scrollCount = 0
+//             })
+//             //$("#flood-video").attr("controls","controls");
+//             $(".scroll-tip").fadeOut(1000);
 
-    $(".part-backcover").bind("touchstart", function (e) {
-        startY = e.originalEvent.targetTouches[0].pageY;
-        //e.preventDefault();
-    });
-    $(".part-backcover").bind("touchmove", function (e) {
-        moveY = e.originalEvent.targetTouches[0].pageY - startY;
-    });
-    $(".part-backcover").bind("touchend", function (e) {
-        //console.log("moveY",moveY);
-        if (moveY > 100 && $(".part-1").offset().top <= 0) {
-            $(".part-0").animate({
-                top: "0px"
-            }, 1000);
-        }
 
-    });
+//             //$("#cover-audio").trigger("pause");
+//             $(this).animate({
+//                 top: "-" + ($(window).height() + 100) + "px"
+//             }, 1000);
+//         }
 
-    $(".cx-logo").remove();
+//     });
 
-}
+//     $(".part-backcover").bind("touchstart", function (e) {
+//         startY = e.originalEvent.targetTouches[0].pageY;
+//         //e.preventDefault();
+//     });
+//     $(".part-backcover").bind("touchmove", function (e) {
+//         moveY = e.originalEvent.targetTouches[0].pageY - startY;
+//     });
+//     $(".part-backcover").bind("touchend", function (e) {
+//         //console.log("moveY",moveY);
+//         if (moveY > 100 && $(".part-1").offset().top <= 0) {
+//             $(".part-0").animate({
+//                 top: "0px"
+//             }, 1000);
+//         }
+
+//     });
+
+//     $(".cx-logo").remove();
+
+// }
 
 
 //轮播翻页
@@ -335,27 +335,25 @@ setInterval(function () {
     chart98Ani(chart98_id);
 }, 2500);
 
-var dilishu_id = 0;
-
-function dilishuAni(id) {
-    if (id < 2) {
+var dilishu_id=0;
+function dilishuAni(id){
+    if(id<5){
         $(".dilishu ul").eq(1).find("li").eq(id).fadeOut(1000);
-        $(".dilishu ul").eq(1).find("li").eq(id + 1).fadeIn(1000);
+        $(".dilishu ul").eq(1).find("li").eq(id+1).fadeIn(1000);
         $(".dilishu ul").eq(0).find("li").removeClass("now");
-        $(".dilishu ul").eq(0).find("li").eq(id + 1).addClass("now");
+        $(".dilishu ul").eq(0).find("li").eq(id+1).addClass("now");
         dilishu_id++;
-    } else if (id == 2) {
+    }
+    else if(id==5){
         $(".dilishu ul").eq(1).find("li").eq(id).fadeOut(1000);
         $(".dilishu ul").eq(1).find("li").eq(0).fadeIn(1000);
         $(".dilishu ul").eq(0).find("li").removeClass("now");
         $(".dilishu ul").eq(0).find("li").eq(0).addClass("now");
-        dilishu_id = 0;
+        dilishu_id=0;
     }
 
 }
-setInterval(function () {
-    dilishuAni(dilishu_id);
-}, 5000);
+setInterval(function(){dilishuAni(dilishu_id);},1000);
 
 
 

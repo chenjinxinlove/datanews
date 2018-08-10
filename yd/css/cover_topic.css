@@ -97,7 +97,7 @@ ul,li{list-style:none}
 
 .chart-nav-points{z-index:9999;width:8px;height:100px;line-height:8px;position:absolute;z-index:100;text-align:center; right:-20px; top:0px; }
 
-.chart98{height: 635px; width: 640px; position: relative;}
+.chart98{height: 369px; width: 640px; position: relative;}
 .chart98 ul li{position: absolute; top: 40px; left: 0px; display: none;}
 .chart98 ul.chart-nav-points li{display:inline-block;*display:inline;*zoom:1;width:8px;height:8px;line-height:8px;background:#bbb;margin:5px 0px;border-radius:50%;position: relative; top:0px;}
 .chart98 ul.chart-nav-points li.now{background:#23a2e0;}

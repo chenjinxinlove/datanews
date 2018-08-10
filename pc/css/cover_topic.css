@@ -467,7 +467,7 @@ li {
 	z-index: 100;
 	text-align: center;
 	right: -20px;
-	top: 0px;
+	top: 35px;
 }
 
 .chart98 {
@@ -510,7 +510,7 @@ li {
 	width: 700px;
 	height: 563px;
 	position: relative;
-	margin-bottom: 30px
+	margin-bottom: 20px
 }
 
 .dilishu-nav-points {
@@ -525,7 +525,7 @@ li {
 	top: 0px;
 }
 
-.dilishu ul.dilishu-nav-points li {
+.dilishu ul.dilishu-nav-points li. {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;

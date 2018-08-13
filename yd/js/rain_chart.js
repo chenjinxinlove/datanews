@@ -290,8 +290,8 @@ function showDot() {
                 // $('input[type="range"]').val(start_time).change();
                 $('.rangeslider__handle').css('left', (totalWidth / dateList) * start_time + 'px');
                 $('.rangeslider__fill').css('width', (totalWidth / dateList) * start_time + 'px');
-                $('.timeShow').text(1470 + start_time + '年');
-
+                // $('.timeShow').text(1470 + start_time + '年');
+                $('#timeShowdd').text(1470 + start_time + '年');
                 if (start_time > 80 && start_time < 90) {
                     $('.info-incident').eq(0).show()
                 } else {
@@ -533,7 +533,14 @@ $('.droughtFlood li').bind('click', function (e) {
 });
 setTimeout(function (params) {
     var width = window.innerWidth;
-    if (width > 380) {
+    alert(width)
+    if (width > 390) {
+        $('.map').css({
+            transform: 'scale(0.4)',
+            'margin-left': '-74.424%'
+        })
+    }
+    if (width > 380 && width < 391) {
         $('.map').css({
             transform: 'scale(0.4)',
             'margin-left': '-70.424%'

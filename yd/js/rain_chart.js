@@ -533,7 +533,7 @@ $('.droughtFlood li').bind('click', function (e) {
 });
 setTimeout(function (params) {
     var width = window.innerWidth;
-    alert(width)
+    // alert(width)
     if (width > 390) {
         $('.map').css({
             transform: 'scale(0.4)',
